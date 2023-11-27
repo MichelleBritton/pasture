@@ -2,17 +2,27 @@ html {
     font-size: 100%;
 }
 body {
-    font: 400 2rem 'Open Sans', sans-serif;
+    font: 400 1.8rem 'Open Sans', sans-serif;
 }
 /* Common Elements 
 ------------------------------------------------------------------*/
+h1, h2 {
+    font-family: 'Galada', cursive;
+    font-weight: 400;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
 .white {
     color: #fff;
 }
 
 /* Header
 ------------------------------------------------------------------*/
-header {
+.header {
     background: rgba(145,80,80, 0.7);
 }
 .logo {
@@ -49,4 +59,10 @@ header {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
     color: #525252;
+}
+
+/* Footer
+------------------------------------------------------------------*/
+.footer {
+    background: rgba(145,80,80, 1);
 }

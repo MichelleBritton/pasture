@@ -11,7 +11,7 @@ h1, h2 {
     font-weight: 400;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
 }
 h2 {
     font-size: 2.5rem;
@@ -20,6 +20,7 @@ h2 {
     color: #fff;
 }
 a {
+    display: inline-block;
     text-decoration: none;    
 }
 a:after {
@@ -83,6 +84,7 @@ a:hover:not(.active):after {
 ------------------------------------------------------------------*/
 .hero-img {
     background: url('https://res.cloudinary.com/dkxdppkpe/image/upload/v1701095799/main-img_xedqsc.webp') no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
 }
@@ -93,16 +95,21 @@ a:hover:not(.active):after {
     border-bottom: 4px solid #fff;
 }
 .welcome-panel .links {
+    font-size: 3rem;
     list-style: none;
-    padding: 0;
 }
-.welcome-panel .links li {
-    float: left;
-    width: 2%;
+.welcome-panel .links li:last-child:before {
+    content: "|";
+    margin: 0 10px;
 }
-.welcome-panel .links li:first-child,
-.welcome-panel .links li:last-child {
-    width: 49%;
+
+/* Text Area on Home Page
+------------------------------------------------------------------*/
+.text-area {
+    padding: 80px 15%;
+}
+.text-area p {
+    font-size: 2.5rem;
 }
 
 /* Footer

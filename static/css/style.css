@@ -2,20 +2,70 @@ html {
     font-size: 100%;
 }
 body {
+    color: #525252;
     font: 400 1.8rem 'Open Sans', sans-serif;
 }
-/* Common Elements 
+
+/* Typography
 ------------------------------------------------------------------*/
-h1, h2 {
-    font-family: 'Galada', cursive;
-    font-weight: 400;
-}
 h1 {
-    font-size: 6rem;
+    font: 400 4rem 'Galada', cursive;
+    line-height: 1;
 }
 h2 {
-    font-size: 2.5rem;
+    font: 400 2rem 'Galada', cursive;
 }
+p {
+    font-size: 1.5rem;
+}
+.welcome-panel .links {
+    font-size: 1.8rem;
+}
+.footer address,
+.footer p {
+    font-size: 1.2rem;
+}
+@media only screen and (min-width:1400px) {	
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .welcome-panel .links {
+        font-size: 2.5rem;
+    }
+    .footer address,
+    .footer p {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width:1800px) {	
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 2.5rem;
+    }
+    .welcome-panel .links {
+        font-size: 3rem;
+    }
+    .footer address,
+    .footer p {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+/* Common Elements 
+------------------------------------------------------------------*/
 .white {
     color: #fff;
 }
@@ -95,7 +145,6 @@ a:hover:not(.active):after {
     border-bottom: 4px solid #fff;
 }
 .welcome-panel .links {
-    font-size: 3rem;
     list-style: none;
 }
 .welcome-panel .links li:last-child:before {
@@ -106,10 +155,17 @@ a:hover:not(.active):after {
 /* Text Area on Home Page
 ------------------------------------------------------------------*/
 .text-area {
-    padding: 80px 15%;
+    padding: 80px 5%;
 }
-.text-area p {
-    font-size: 2.5rem;
+@media only screen and (min-width:1400px) {	
+    .text-area {
+        padding: 80px 10%;
+    }
+}
+@media only screen and (min-width:1800px) {	
+    .text-area {
+        padding: 80px 15%;
+    }
 }
 
 /* Footer

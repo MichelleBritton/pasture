@@ -19,6 +19,20 @@ h2 {
 .white {
     color: #fff;
 }
+a {
+    text-decoration: none;    
+}
+a:after {
+    border-bottom: 2px solid;
+    content: "";
+    display: block;
+    height: 2px; 
+    transition: all 0.3s ease-out;
+    width: 0;
+}
+a:hover:not(.active):after {
+    width: 100%;
+}
 
 /* Header
 ------------------------------------------------------------------*/
@@ -54,15 +68,41 @@ h2 {
 }
 .navbar-nav .nav-link{
     color: #fff;
+    padding: 0;
 }
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    border-bottom: 2px solid #fff;
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #fff; 
     color: #fff;
+    padding: 0;
 }
 .offcanvas {
     background: rgba(145,80,80, 1); 
+}
+
+/* Hero Image on Home Page
+------------------------------------------------------------------*/
+.hero-img {
+    background: url('https://res.cloudinary.com/dkxdppkpe/image/upload/v1701095799/main-img_xedqsc.webp') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.welcome-panel {
+    background: rgba(145,80,80, 0.3);
+}
+.welcome-panel h1 {
+    border-bottom: 4px solid #fff;
+}
+.welcome-panel .links {
+    list-style: none;
+    padding: 0;
+}
+.welcome-panel .links li {
+    float: left;
+    width: 2%;
+}
+.welcome-panel .links li:first-child,
+.welcome-panel .links li:last-child {
+    width: 49%;
 }
 
 /* Footer
@@ -70,3 +110,7 @@ h2 {
 .footer {
     background: rgba(145,80,80, 1);
 }
+
+
+
+

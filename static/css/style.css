@@ -58,7 +58,11 @@ h2 {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: #525252;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.offcanvas {
+    background: rgba(145,80,80, 1); 
 }
 
 /* Footer

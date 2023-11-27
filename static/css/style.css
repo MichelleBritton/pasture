@@ -67,6 +67,9 @@ p {
 .white {
     color: #fff;
 }
+.red {
+    color: #915050;
+}
 a {
     display: inline-block;
     text-decoration: none;    

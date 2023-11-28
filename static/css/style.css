@@ -1,13 +1,12 @@
+/* Typography
+------------------------------------------------------------------*/
 html {
     font-size: 100%;
 }
 body {
     color: #525252;
-    font: 400 1.8rem 'Open Sans', sans-serif;
+    font: 400 1.5rem 'Open Sans', sans-serif;
 }
-
-/* Typography
-------------------------------------------------------------------*/
 h1 {
     font: 400 4rem 'Galada', cursive;
     line-height: 1;
@@ -32,8 +31,8 @@ p {
     h2 {
         font-size: 2.2rem;
     }
-    p {
-        font-size: 2rem;
+    body, p {
+        font-size: 1.8rem;
     }
     .welcome-panel .links {
         font-size: 2.5rem;
@@ -50,8 +49,8 @@ p {
     h2 {
         font-size: 2.5rem;
     }
-    p {
-        font-size: 2.5rem;
+    body, p {
+        font-size: 2rem;
     }
     .welcome-panel .links {
         font-size: 3rem;

@@ -190,6 +190,16 @@ a:hover:not(.active):after {
         padding: 80px 15%;
     }
 }
+.text-area button {
+    background: #4ea767;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    padding: 8px 15px;
+}
+.text-area button:hover {
+    background: #915050;
+}
 
 /* Footer
 ------------------------------------------------------------------*/

@@ -1,0 +1,21 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: [example.com] Password Reset Email
+From: webmaster@localhost
+To: michelle@daisy-webdesign.co.uk
+Date: Tue, 28 Nov 2023 14:55:43 -0000
+Message-ID: <170118334391.13892.5418423343851629862@localhost>
+
+Hello from example.com!
+
+You're receiving this email because you or someone else has requested a password reset for your user account.
+It can be safely ignored if you did not request a password reset. Click the link below to reset your password.
+
+http://8000-michellebritton-pasture-lk2yv0gxmf0.ws-eu106.gitpod.io/accounts/password/reset/key/1-bydqsv-1b67b9fda35a48fe3154e4d061e0fc2f/
+
+In case you forgot, your username is Michelle.
+
+Thank you for using example.com!
+example.com
+-------------------------------------------------------------------------------

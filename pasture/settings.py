@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'active_link',
     'restaurant',
 ]
 
@@ -56,7 +57,7 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
-# Store all sent emails for password reset
+# Store all sent email for password reset
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 

@@ -1,4 +1,5 @@
 {% load static %}
+{% load active_link_tags %}
 
 <!DOCTYPE html>
 <html class="h-100">
@@ -38,33 +39,33 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href={% url 'home' %}>Home</a>
+                                <a class="nav-link {% active_link 'home' 'active' strict=True %}" href="{% url 'home' %}">Home</a>
                             </li>      
                             <li class="nav-item">
-                                <a class="nav-link" href="">Menu</a>
+                                <a class="nav-link {% active_link 'menu' 'active' %}" href="">Menu</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link" href="">Book</a>
+                                <a class="nav-link {% active_link 'book' 'active' %}" href="">Book</a>
                             </li> 
                             {% if user.is_authenticated %}  
                                 {% if request.user.is_staff %}
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">Staff Management</a>
+                                    <a class="nav-link {% active_link 'staff_management' 'active' %}" href="">Staff Management</a>
                                 </li>   
                                 {% else %}                                
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">My Profile</a>
+                                    <a class="nav-link {% active_link 'my_profile' 'active' %}" href="">My Profile</a>
                                 </li> 
                                 {% endif %}
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                                <a class="nav-link {% active_link 'account_logout' 'active' %}" href="{% url 'account_logout' %}">Logout</a>
                             </li>
                             {% else %}
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                                <a class="nav-link {% active_link 'account_signup' 'active' %}" href="{% url 'account_signup' %}">Register</a>
                             </li>       
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                                <a class="nav-link {% active_link 'account_login' 'active' %}" href="{% url 'account_login' %}">Login</a>
                             </li>  
                             {% endif %}  
                         </ul>            

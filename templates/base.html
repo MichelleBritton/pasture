@@ -45,7 +45,7 @@
                                 <a class="nav-link {% active_link 'menu' 'active' %}" href="">Menu</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link {% active_link 'book' 'active' %}" href="">Book</a>
+                                <a class="nav-link {% active_link 'book' 'active' %}" href="{% url 'book' %}">Book</a>
                             </li> 
                             {% if user.is_authenticated %}  
                                 {% if request.user.is_staff %}

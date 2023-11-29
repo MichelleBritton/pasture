@@ -4,6 +4,7 @@
 {% endblock title %}
 
 {% block content %}
+{% load crispy_forms_tags %}
     <!-- Hero Image  -->
     <section class="generic-img d-flex justify-content-center align-items-end text-center white">
         <div class="title-panel p-5">
@@ -12,6 +13,10 @@
     </section>
     <!-- Content Area -->
     <section class="text-area">
-
+        <form method="post" style="margin-top: 1.3em;">
+            {{ booking_form | crispy }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-signup btn-lg">Submit</button> 
+        </form>
     </section>
 {%endblock%}

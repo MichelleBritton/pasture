@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'active_link',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'restaurant',
 ]
 
@@ -60,6 +62,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # Store all sent email for password reset
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

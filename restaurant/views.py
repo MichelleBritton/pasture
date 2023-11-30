@@ -28,6 +28,7 @@ def book(request):
             messages.success(request, 'Thank you, your reservation has been made')
             # return HttpResponseRedirect(reverse('my_profile'))
         else:
+            messages.error(request, 'Sorry, the date and time you have requested has already been booked, please select another date or time')
             booking_form = BookTableForm()
 
     return render(

@@ -2,6 +2,8 @@ from django.shortcuts import render
 from .models import Booking
 from .forms import BookTableForm
 from django.contrib.auth.models import User
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 
 def home(request):
@@ -22,6 +24,7 @@ def book(request):
             instance.username = User.objects.get(id=request.user.id)
             instance.email = request.user.email
             instance.save()
+            return HttpResponseRedirect(reverse('my_profile'))
         else:
             booking_form = BookTableForm()
 

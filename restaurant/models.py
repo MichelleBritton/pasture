@@ -8,6 +8,7 @@ class Booking(models.Model):
     username = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="booking"
     )
+    name = models.CharField(max_length=80)
     phone_no = models.CharField(max_length=11, default=0)
     date = models.DateField()
     time = models.IntegerField()

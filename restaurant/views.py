@@ -5,11 +5,15 @@ from django.contrib.auth.models import User
 
 
 def home(request):
-
+    """
+    Render Home page
+    """
     return render(request, 'index.html')
 
 def book(request):
-
+    """
+    Render Book page and display booking form
+    """
     if request.method == 'POST':
         booking_form = BookTableForm(data=request.POST)
 

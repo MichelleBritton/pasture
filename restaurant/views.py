@@ -17,7 +17,7 @@ def book(request):
     Render Book page and display booking form
     """
     if request.method == 'POST':
-        booking_form = BookTableForm(data=request.POST)
+        booking_form = BookTableForm(data=request.POST)        
 
         if booking_form.is_valid():
             instance = booking_form.save(commit=False)

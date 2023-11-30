@@ -27,3 +27,12 @@ class Booking(models.Model):
     notes = models.TextField(blank=True)
 
 
+    class Meta:
+        """
+        Ensure that the table cannot be double booked
+        """
+        constraints = [
+            models.UniqueConstraint(fields=['date', 'time'], name='unique_booking')
+        ]
+
+

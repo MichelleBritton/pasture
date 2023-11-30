@@ -10,3 +10,13 @@ window.addEventListener('scroll', function () {
         logo.src = "https://res.cloudinary.com/dkxdppkpe/image/upload/v1701084882/logo_sqdz3b.webp";
     }
 });
+
+/** 
+ * Set timeout function to close alert after 3 seconds
+ * Credit: Code Insitute course content
+ */
+setTimeout(function() {
+    let messages = document.getElementById("msg");
+    let alert = new bootstrap.Alert(messages);
+    alert.close();
+}, 3000);

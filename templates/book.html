@@ -13,10 +13,14 @@
     </section>
     <!-- Content Area -->
     <section class="text-area">
-        <form method="post" style="margin-top: 1.3em;">
+        {% if user.is_authenticated %}
+        <form method="post">
             {{ booking_form | crispy }}
             {% csrf_token %}
             <button type="submit" class="btn btn-signup btn-lg">Submit</button> 
         </form>
+        {% else %}
+        <p>Please login or register to make a booking</p>
+        {% endif %}
     </section>
 {%endblock%}

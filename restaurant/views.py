@@ -24,7 +24,7 @@ def book(request):
             instance.username = User.objects.get(id=request.user.id)
             instance.email = request.user.email
             instance.save()
-            return HttpResponseRedirect(reverse('my_profile'))
+            # return HttpResponseRedirect(reverse('my_profile'))
         else:
             booking_form = BookTableForm()
 

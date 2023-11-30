@@ -13,6 +13,6 @@ class Booking(models.Model):
     date = models.DateField()
     time = models.IntegerField()
     no_of_guests = models.IntegerField()
-    notes = models.TextField()
+    notes = models.TextField(blank=True)
 
 

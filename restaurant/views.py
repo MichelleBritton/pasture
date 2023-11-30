@@ -4,6 +4,7 @@ from .forms import BookTableForm
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.contrib import messages
 
 
 def home(request):
@@ -24,6 +25,7 @@ def book(request):
             instance.username = User.objects.get(id=request.user.id)
             instance.email = request.user.email
             instance.save()
+            messages.success(request, 'Thank you, your reservation has been made')
             # return HttpResponseRedirect(reverse('my_profile'))
         else:
             booking_form = BookTableForm()

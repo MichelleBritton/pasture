@@ -32,7 +32,7 @@ class Booking(models.Model):
         Ensure that the table cannot be double booked
         """
         constraints = [
-            models.UniqueConstraint(fields=['date', 'time'], name='unique_booking')
+            models.UniqueConstraint(fields=['date', 'time'], name='unique_booking'),
         ]
 
 

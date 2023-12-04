@@ -35,6 +35,12 @@
                         <td>{{ booking.get_time_display }}</td>
                         <td>{{ booking.no_of_guests }}</td>
                         <td>{{ booking.notes }}</td>
+                        <td>
+                            <a href="/edit/{{ booking.id }}">Edit</a>
+                        </td>
+                        <td>
+                            <a href="/delete/{{ booking.id }}">Delete</a>
+                        </td>
                     </tr>                            
                     {% endfor %}
                 </table>          

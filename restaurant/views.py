@@ -45,9 +45,7 @@ def book(request):
 def my_profile(request):
     """
     Render My Profile page to display user bookings
-    and enable CRUD funcionality for user
-    """
-    
+    """    
     bookings = Booking.objects.filter(username=request.user)
     context = {
         'bookings' : bookings,

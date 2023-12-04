@@ -17,6 +17,9 @@ h2 {
 p {
     font-size: 1.5rem;
 }
+td {
+    font-size: 1.2em;
+}
 .welcome-panel .links {
     font-size: 1.8rem;
 }
@@ -33,6 +36,9 @@ p {
     }
     body, p {
         font-size: 1.8rem;
+    }
+    td {
+        font-size: 1.4rem;
     }
     .welcome-panel .links {
         font-size: 2.5rem;
@@ -51,6 +57,9 @@ p {
     }
     body, p {
         font-size: 2rem;
+    }
+    td {
+        font-size: 1.6rem;
     }
     .welcome-panel .links {
         font-size: 3rem;
@@ -179,14 +188,23 @@ a:hover:not(.active):after {
 .text-area {
     padding: 80px 5%;
 }
+.text-area.profile {
+    padding: 80px 2.5%;
+}
 @media only screen and (min-width:1400px) {	
     .text-area {
         padding: 80px 10%;
+    }
+    .text-area.profile {
+        padding: 80px 5%;
     }
 }
 @media only screen and (min-width:1800px) {	
     .text-area {
         padding: 80px 15%;
+    }
+    .text-area.profile {
+        padding: 80px 7.5%;
     }
 }
 .text-area button {
@@ -199,6 +217,7 @@ a:hover:not(.active):after {
 .text-area button:hover {
     background: #915050;
 }
+
 
 /* Footer
 ------------------------------------------------------------------*/

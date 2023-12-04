@@ -13,6 +13,7 @@ def home(request):
     """
     return render(request, 'index.html')
 
+
 def book(request):
     """
     Render Book page and display booking form
@@ -25,7 +26,8 @@ def book(request):
             instance.username = User.objects.get(id=request.user.id)
             instance.email = request.user.email
             instance.save()
-            messages.success(request, 'Thank you, your reservation has been made')
+            messages.success(request,
+                'Thank you, your reservation has been made')
             # return HttpResponseRedirect(reverse('my_profile'))
         else:
             messages.error(request, 'Sorry, the date and time you have requested has already been booked, please select another date or time')
@@ -38,3 +40,12 @@ def book(request):
             "booking_form": BookTableForm()
         },
     )
+
+
+def my_profile(request):
+    """
+    Render My Profile page to display user bookings
+    and enable CRUD funcionality for user
+    """
+
+    return render(request, 'my_profile.html')

@@ -23,7 +23,7 @@ class Booking(models.Model):
     phone_no = models.CharField(max_length=11, default=0)
     date = models.DateField()
     time = models.IntegerField(choices=TIMES, default=1)
-    no_of_guests = models.IntegerField()
+    no_of_guests = models.IntegerField(default=1)
     notes = models.TextField(blank=True)
 
 

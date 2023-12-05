@@ -25,4 +25,5 @@ urlpatterns = [
     path('my_profile/', views.my_profile, name='my_profile'),
     path('edit/<booking_id>', views.edit_booking, name='edit'),
     path('delete/<booking_id>', views.delete_booking, name='delete_booking'),
+    path('staff_profile/', views.staff_profile, name='staff_profile'),
 ]

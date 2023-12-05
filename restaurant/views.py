@@ -28,7 +28,7 @@ def book(request):
             instance.save()
             messages.success(request,
                 'Thank you, your reservation has been made')
-            # return HttpResponseRedirect(reverse('my_profile'))
+            return redirect('my_profile')
         else:
             messages.error(request, 'Sorry, the date and time you have requested has already been booked, please select another date or time')
             booking_form = BookTableForm()
@@ -83,7 +83,7 @@ def edit_booking(request, booking_id):
 
 def delete_booking(request, booking_id):
     """ 
-    Delete a booking
+    Render Delete Booking page and delete booking on confirmation
     """
     # Get a copy of the reservation from the database
     booking = get_object_or_404(Booking, id=booking_id)
@@ -96,3 +96,15 @@ def delete_booking(request, booking_id):
 
     # If it is a GET request then render the delete confirmation page
     return render(request, "delete_booking.html")
+
+
+def staff_profile(request):
+    """
+    Render Staff Profile page to display all bookings
+    """   
+    # Filter bookings made by the user 
+    bookings = Booking.objects.all()
+    context = {
+        'bookings' : bookings,
+    }
+    return render(request, 'staff_profile.html', context)

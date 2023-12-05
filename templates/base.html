@@ -62,7 +62,7 @@
                             {% if user.is_authenticated %}  
                                 {% if request.user.is_staff %}
                                 <li class="nav-item">
-                                    <a class="nav-link {% active_link 'staff_management' 'active' %}" href="">Staff Management</a>
+                                    <a class="nav-link {% active_link 'staff_management' 'active' %}" href="{% url 'staff_profile' %}">Staff Management</a>
                                 </li>   
                                 {% else %}                                
                                 <li class="nav-item">

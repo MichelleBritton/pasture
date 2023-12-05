@@ -2,9 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Booking
 from .forms import BookTableForm
 from django.contrib.auth.models import User
-# from django.http import HttpResponseRedirect
-# from django.urls import reverse
 from django.contrib import messages
+from datetime import datetime
 
 
 def home(request):
@@ -102,8 +101,10 @@ def staff_profile(request):
     """
     Render Staff Profile page to display all bookings
     """   
-    # Filter bookings made by the user 
-    bookings = Booking.objects.all()
+    # Filter bookings for today's date
+    today = datetime.today()
+    bookings = Booking.objects.filter(date=today)
+
     context = {
         'bookings' : bookings,
     }

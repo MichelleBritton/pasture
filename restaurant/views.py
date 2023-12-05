@@ -109,3 +109,15 @@ def staff_profile(request):
         'bookings' : bookings,
     }
     return render(request, 'staff_profile.html', context)
+
+def manage_bookings(request):
+    """
+    Render Manage Bookings page to display all bookings
+    and ability to edit and delete them
+    """   
+    bookings = Booking.objects.all()
+
+    context = {
+        'bookings' : bookings,
+    }
+    return render(request, 'manage_bookings.html', context)

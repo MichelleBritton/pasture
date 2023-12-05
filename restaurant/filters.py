@@ -8,7 +8,10 @@ class BookingFilter(django_filters.FilterSet):
     Filter bookings by name or date
     """
 
-    name = django_filters.CharFilter(lookup_expr='icontains')
+    name = django_filters.CharFilter(
+        lookup_expr='icontains',
+        widget=forms.TextInput(attrs={'placeholder': 'Name'})
+    )
     date = django_filters.DateFilter(
         lookup_expr='icontains',
         widget=forms.DateInput(

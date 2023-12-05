@@ -20,3 +20,8 @@ setTimeout(function() {
     let alert = new bootstrap.Alert(messages);
     alert.close();
 }, 3000);
+
+/**
+ * Initiate date picker for filter
+ */
+$('#datepicker').datepicker();

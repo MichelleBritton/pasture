@@ -183,7 +183,7 @@ a:hover:not(.active):after {
     margin-bottom: 35px;
 }
 
-/* Text Area on Home Page
+/* Text Area 
 ------------------------------------------------------------------*/
 .text-area {
     padding: 80px 5%;
@@ -218,6 +218,11 @@ a:hover:not(.active):after {
     background: #915050;
 }
 
+/* Sub Nav on Staff Profile Page
+------------------------------------------------------------------*/
+.sub-nav {
+    list-style: none;
+}
 
 /* Footer
 ------------------------------------------------------------------*/

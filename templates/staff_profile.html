@@ -14,9 +14,16 @@
     <!-- Content Area -->
     <section class="text-area profile">
         {% if user.is_authenticated %}
-        <div class="container-fluid">          
-            <h2 class="red">Hello {{ user.username }}</h2>
-            <p>Welcome to your dashboard where you can view, edit and delete your reservations.</p>
+        <div class="container-fluid">   
+            <div class="d-flex justify-content-between">
+                <h2 class="red">Hello {{ user.username }}</h2>
+                <ul class="d-flex sub-nav">
+                    <li><a href="" class="red px-5">Manage Bookings</a></li>
+                    <li><a href="" class="red">Manage Menus</a></li>
+                </ul>
+            </div>       
+            
+            <p>Here are the reservations for today:</p>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <tr>
@@ -25,8 +32,6 @@
                         <th>Time</th>
                         <th>No. of Guests</th>
                         <th>Notes</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
                     </tr>
                     {% for booking in bookings %}
                     <tr>                                
@@ -34,13 +39,7 @@
                         <td>{{ booking.date }}</td>
                         <td>{{ booking.get_time_display }}</td>
                         <td>{{ booking.no_of_guests }}</td>
-                        <td>{{ booking.notes }}</td>
-                        <td>
-                            <a href="/edit/{{ booking.id }}">Edit</a>
-                        </td>
-                        <td>
-                            <a href="/delete/{{ booking.id }}" class="red">Delete</a>
-                        </td>
+                        <td>{{ booking.notes }}</td>                       
                     </tr>                            
                     {% endfor %}
                 </table>          

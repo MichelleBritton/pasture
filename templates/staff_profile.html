@@ -15,6 +15,7 @@
     <section class="text-area profile">
         {% if user.is_authenticated %}
         <div class="container-fluid">   
+            <!-- Sub Navigation -->
             <div class="d-flex justify-content-between">
                 <h2 class="red">Hello {{ user.username }}</h2>
                 <ul class="d-flex sub-nav">
@@ -23,6 +24,7 @@
                 </ul>
             </div>       
             
+            <!-- Today's reservations -->
             <p>Here are the reservations for today:</p>
             <div class="table-responsive">
                 <table class="table table-striped">

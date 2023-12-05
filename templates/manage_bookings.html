@@ -16,15 +16,23 @@
         {% if user.is_authenticated %}
         <div class="container-fluid">   
             <!-- Sub Navigation -->
-            <div class="d-flex justify-content-between">
-                <h2 class="red">Hello {{ user.username }}</h2>
+            <div class="d-flex justify-content-end pb-5">                
                 <ul class="d-flex sub-nav">
-                    <li><a href="" class="red px-5">Manage Bookings</a></li>
+                    <li><a href="{% url 'manage_bookings' %}" class="red px-5">Manage Bookings</a></li>
                     <li><a href="" class="red">Manage Menus</a></li>
                 </ul>
             </div>  
-            <!-- Today's reservations -->
-            <p>Here are the reservations for today:</p>
+            <!-- Filter -->
+            <div class="form-group">
+                <div class="card">
+                    <form method="get">
+                        <p><b>Name:</b>{{ booking_filter.form.name }}</p>
+                        <p><b>Date:</b>{{ booking_filter.form.date }}</p>
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div> 
+            <!-- All reservations -->            
             <div class="table-responsive">
                 <table class="table table-striped">
                     <tr>
@@ -33,14 +41,22 @@
                         <th>Time</th>
                         <th>No. of Guests</th>
                         <th>Notes</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
-                    {% for booking in bookings %}
+                    {% for booking in all_bookings %}
                     <tr>                                
                         <td>{{ booking.name }}</td>
                         <td>{{ booking.date }}</td>
                         <td>{{ booking.get_time_display }}</td>
                         <td>{{ booking.no_of_guests }}</td>
-                        <td>{{ booking.notes }}</td>                       
+                        <td>{{ booking.notes }}</td>       
+                        <td>
+                            <a href="/edit/{{ booking.id }}">Edit</a>
+                        </td>
+                        <td>
+                            <a href="/delete/{{ booking.id }}" class="red">Delete</a>
+                        </td>                
                     </tr>                            
                     {% endfor %}
                 </table>          

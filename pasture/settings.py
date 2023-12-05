@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'active_link',
     'crispy_forms',
     'crispy_bootstrap5',
+    'django_filters',
     'restaurant',
 ]
 

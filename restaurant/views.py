@@ -4,6 +4,7 @@ from .forms import BookTableForm
 from django.contrib.auth.models import User
 from django.contrib import messages
 from datetime import datetime
+from .filters import BookingFilter
 
 
 def home(request):
@@ -65,7 +66,10 @@ def edit_booking(request, booking_id):
             form.save()
             messages.success(request,
                 'Thank you, your reservation has been changed')
-            return redirect('my_profile')
+            if request.user.is_staff:
+                return redirect('manage_bookings')
+            else:
+                return redirect('my_profile')
         else:
             messages.error(request, 'Sorry, the date and time you have requested has already been booked, please select another date or time')
             form = BookTableForm()
@@ -91,7 +95,10 @@ def delete_booking(request, booking_id):
     # Otherwise, return to My Profile
     if request.method == "POST":
         booking.delete()
-        return redirect('my_profile')
+        if request.user.is_staff:
+            return redirect('manage_bookings')
+        else:
+            return redirect('my_profile')
 
     # If it is a GET request then render the delete confirmation page
     return render(request, "delete_booking.html")
@@ -115,9 +122,12 @@ def manage_bookings(request):
     Render Manage Bookings page to display all bookings
     and ability to edit and delete them
     """   
-    bookings = Booking.objects.all()
+    all_bookings = Booking.objects.order_by('date')
+    booking_filter = BookingFilter(request.GET, queryset=all_bookings)
+    all_bookings = booking_filter.qs
 
     context = {
-        'bookings' : bookings,
+        'all_bookings': all_bookings,
+        "booking_filter": booking_filter,
     }
     return render(request, 'manage_bookings.html', context)

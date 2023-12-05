@@ -79,3 +79,20 @@ def edit_booking(request, booking_id):
     }
 
     return render(request, "edit_booking.html", context)
+
+
+def delete_booking(request, booking_id):
+    """ 
+    Delete a booking
+    """
+    # Get a copy of the reservation from the database
+    booking = get_object_or_404(Booking, id=booking_id)
+
+    # If the user clicks on yes then delete the booking
+    # Otherwise, return to My Profile
+    if request.method == "POST":
+        booking.delete()
+        return redirect('my_profile')
+
+    # If it is a GET request then render the delete confirmation page
+    return render(request, "delete_booking.html")

@@ -12,6 +12,13 @@ TIMES = (
 )
 
 
+TYPES = (
+    (1, 'Starter'),
+    (2, 'Main'),
+    (3, 'Dessert')
+)
+
+
 class Booking(models.Model):
     """
     Model to store data regarding booking reservations
@@ -35,4 +42,13 @@ class Booking(models.Model):
             models.UniqueConstraint(fields=['date', 'time'], name='unique_booking'),
         ]
 
+
+class Menus(models.Model):
+    """ 
+    Model to store data regarding menu items
+    """
+    type = models.CharField(max_length=4, choices=TYPES, default="Please select a type")
+    title = models.CharField(max_length=200, unique=True)
+    description = models.TextField()
+    price = models.FloatField()
 

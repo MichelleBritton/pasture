@@ -12,7 +12,7 @@
     </section>
     <!-- Content Area -->
     <section class="text-area profile">
-        {% if user.is_authenticated %}
+        {% if request.user.is_staff %}
         <div class="container-fluid">   
             <!-- Sub Navigation -->
             <div class="d-flex justify-content-between">
@@ -46,7 +46,7 @@
             </div>
         </div>        
         {% else %}
-        <p class="text-center">You must <a href="{% url 'account_login' %}">login</a> to view this page.</p>
+        <p class="text-center">You must be a member of staff and <a href="{% url 'account_login' %}">login</a> to view this page.</p>
         {% endif %}
     </section>
 {%endblock%}

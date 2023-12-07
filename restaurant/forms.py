@@ -1,4 +1,5 @@
 from .models import Booking
+from .models import Menu
 from django import forms
 
 
@@ -32,3 +33,4 @@ class MenuForm(forms.ModelForm):
 
     class Meta:
         model = Menu
+        fields = ('type', 'title', 'description', 'price',)

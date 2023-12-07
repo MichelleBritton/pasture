@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Booking
+from .models import Menu
 from .forms import BookTableForm
+from .forms import MenuForm
 from django.contrib.auth.models import User
 from django.contrib import messages
 from datetime import datetime
@@ -135,10 +137,36 @@ def manage_bookings(request):
 
 
 def menu(request):
+    """
+    Render Menu Page
+    """
 
     return render(request, 'menu.html')
 
 
 def manage_menus(request):
+    """
+    Render Manage Menus Page and display  form
+    """
 
-    return render(request, 'manage_menus')
+    if request.method == 'POST':
+        menu_form = MenuForm(data=request.POST)        
+
+        if menu_form.is_valid():
+            instance = menu_form.save(commit=False)            
+            instance.save()
+            messages.success(request,
+                'Menu item has been created')
+            return redirect('manage_menus.html')
+        else:
+            messages.error(request, 'There has been an error, please check the form and try again')
+            menu_form = MenuForm()
+
+    return render(
+        request,
+        'manage_menus.html',
+        {
+            "menu_form": MenuForm()
+        },
+    )
+    return render(request, 'manage_menus.html')

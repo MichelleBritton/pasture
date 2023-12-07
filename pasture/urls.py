@@ -28,4 +28,5 @@ urlpatterns = [
     path('staff_profile/', views.staff_profile, name='staff_profile'),
     path('manage_bookings/', views.manage_bookings, name='manage_bookings'),
     path('menu/', views.menu, name='menu'),
+    path('manage_menus/', views.manage_menus, name='manage_menus'),
 ]

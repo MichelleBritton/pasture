@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Pasture | Manage Menus</title>  
+{% endblock title %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+    <!-- Hero Image  -->
+    <section class="generic-img d-flex justify-content-center align-items-end text-center white">
+        <div class="title-panel p-5">
+            <h1>Book a Table</h1>            
+        </div>
+    </section>
+    <!-- Content Area -->
+    <section class="text-area">
+        {% if user.is_authenticated %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <h2 class="red">Hello {{ user.username }}</h2>
+                    <p>Please complete the form below to make a reservation.</p>
+                    <!-- Booking Form-->                
+                    <form method="post">
+                        {{ booking_form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-signup btn-lg">Submit</button> 
+                    </form>
+                </div>
+            </div>
+        </div>        
+        {% else %}
+        <p class="text-center">To book a table, please <a href="{% url 'account_signup' %}">register</a> or if you already have an account, please <a href="{% url 'account_login' %}">login</a>.</p>
+        {% endif %}
+    </section>
+{%endblock%}

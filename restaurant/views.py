@@ -137,3 +137,8 @@ def manage_bookings(request):
 def menu(request):
 
     return render(request, 'menu.html')
+
+
+def manage_menus(request):
+
+    return render(request, 'manage_menus')

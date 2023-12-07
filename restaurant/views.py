@@ -157,9 +157,10 @@ def manage_menus(request):
             instance.save()
             messages.success(request,
                 'Menu item has been created')
-            return redirect('manage_menus.html')
+            return redirect('manage_menus')
         else:
-            messages.error(request, 'There has been an error, please check the form and try again')
+            for error in menu_form.errors:
+                messages.error(request, menu_form.errors[error])           
             menu_form = MenuForm()
 
     return render(
@@ -169,4 +170,3 @@ def manage_menus(request):
             "menu_form": MenuForm()
         },
     )
-    return render(request, 'manage_menus.html')

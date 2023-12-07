@@ -47,7 +47,7 @@ class Menu(models.Model):
     """ 
     Model to store data regarding menu items
     """
-    type = models.CharField(max_length=4, choices=TYPES)
+    type = models.IntegerField(choices=TYPES)
     title = models.CharField(max_length=200, unique=True)
     description = models.TextField()
     price = models.FloatField()

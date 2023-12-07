@@ -19,7 +19,7 @@
                 <h2 class="red">Hello {{ user.username }}</h2>
                 <ul class="d-flex sub-nav">
                     <li><a href="{% url 'manage_bookings' %}" class="red px-5">Manage Bookings</a></li>
-                    <li><a href="" class="red">Manage Menus</a></li>
+                    <li><a href="{% url 'manage_menus' %}" class="red">Manage Menus</a></li>
                 </ul>
             </div>  
             <!-- Today's reservations -->

@@ -138,10 +138,20 @@ def manage_bookings(request):
 
 def menu(request):
     """
-    Render Menu Page
+    Render Menu Page and retrieve Menu items from database
     """
 
-    return render(request, 'menu.html')
+    starters = Menu.objects.filter(type=1).values()
+    mains = Menu.objects.filter(type=2).values()
+    desserts = Menu.objects.filter(type=3).values()
+
+    context = {
+        'starters': starters,
+        'mains': mains,
+        'desserts': desserts,
+    }
+
+    return render(request, 'menu.html', context)
 
 
 def manage_menus(request):

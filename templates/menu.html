@@ -12,6 +12,50 @@
     </section>
     <!-- Content Area -->
     <section class="text-area">
-        
+        <!-- Starters Menu Items -->    
+        <h2 class="red">Starters</h2>        
+        <div class="table-responsive">
+            <table class="table">
+                {% for starter in starters %}
+                <tr>                                
+                    <td>
+                        <h3>{{ starter.title }}</h3>
+                        <p>{{ starter.description }}</p>
+                    </td>
+                    <td>£{{ starter.price|floatformat:2 }}</td>                                    
+                </tr>                            
+                {% endfor %}
+            </table>          
+        </div>
+        <!-- Mains Menu Items -->    
+        <h2 class="red">Mains</h2>        
+        <div class="table-responsive">
+            <table class="table">
+                {% for main in mains %}
+                <tr>                                
+                    <td>
+                        <h3>{{ main.title }}</h3>
+                        <p>{{ main.description }}</p>
+                    </td>
+                    <td>£{{ main.price|floatformat:2 }}</td>                                    
+                </tr>                            
+                {% endfor %}
+            </table>          
+        </div>
+        <!-- Desserts Menu Items -->    
+        <h2 class="red">Desserts</h2>        
+        <div class="table-responsive">
+            <table class="table">
+                {% for dessert in desserts %}
+                <tr>                                
+                    <td>
+                        <h3>{{ dessert.title }}</h3>
+                        <p>{{ dessert.description }}</p>
+                    </td>
+                    <td>£{{ dessert.price|floatformat:2 }}</td>                                    
+                </tr>                            
+                {% endfor %}
+            </table>          
+        </div>
     </section>
 {%endblock%}

@@ -43,7 +43,7 @@ class Booking(models.Model):
         ]
 
 
-class Menus(models.Model):
+class Menu(models.Model):
     """ 
     Model to store data regarding menu items
     """

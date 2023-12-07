@@ -39,63 +39,75 @@
             </div>
         </div>
         <div class="container-fluid border-top border-4 mt-5 pt-5">
-            <p class="pb-5"><strong>Edit or delete existing menu items below:</strong></p>
-            <!-- Starters Menu Items -->    
-            <h2 class="red">Starters</h2>        
-            <div class="table-responsive">
-                <table class="table">
-                    {% for starter in starters %}
-                    <tr>                                
-                        <td>{{ starter.title }}</td>
-                        <td>{{ starter.description }}</td>
-                        <td>£{{ starter.price|floatformat:2 }}</td> 
-                        <td>
-                            <a href="/edit/{{ starter.id }}">Edit</a>
-                        </td>
-                        <td>
-                            <a href="/delete/{{ starter.id }}" class="red">Delete</a>
-                        </td>                                     
-                    </tr>                            
-                    {% endfor %}
-                </table>          
+            <p class="pb-5"><strong>Edit or delete existing menu items below:</strong></p>               
+            <div class="mb-5">
+                <!-- Starters Menu Items --> 
+                <h2 class="red">Starters</h2>   
+                {% for starter in starters %}
+                <div class="row">
+                    <div class="col-4">
+                        <p class="small">{{ starter.title }}</p>
+                    </div>
+                    <div class="col-5">
+                        <p class="small">{{ starter.description }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small">£{{ starter.price|floatformat:2 }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/edit/{{ starter.id }}">Edit</a></p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/delete/{{ starter.id }}" class="red">Delete</a></p>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
-            <!-- Mains Menu Items -->    
-            <h2 class="red">Mains</h2>        
-            <div class="table-responsive">
-                <table class="table">
-                    {% for main in mains %}
-                    <tr>                                
-                        <td>{{ main.title }}</td>
-                        <td>{{ main.description }}</td>
-                        <td>£{{ main.price|floatformat:2 }}</td>        
-                        <td>
-                            <a href="/edit/{{ main.id }}">Edit</a>
-                        </td>
-                        <td>
-                            <a href="/delete/{{ main.id }}" class="red">Delete</a>
-                        </td>                               
-                    </tr>                            
-                    {% endfor %}
-                </table>          
+            <div class="mb-5">
+                <!-- Mains Menu Items -->    
+                <h2 class="red">Mains</h2>    
+                {% for main in mains %}
+                <div class="row">
+                    <div class="col-4">
+                        <p class="small">{{ main.title }}</p>
+                    </div>
+                    <div class="col-5">
+                        <p class="small">{{ main.description }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small">£{{ main.price|floatformat:2 }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/edit/{{ main.id }}">Edit</a></p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/delete/{{ main.id }}" class="red">Delete</a></p>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
-            <!-- Desserts Menu Items -->    
-            <h2 class="red">Desserts</h2>        
-            <div class="table-responsive">
-                <table class="table">
-                    {% for dessert in desserts %}
-                    <tr>                                
-                        <td>{{ dessert.title }}</td>
-                        <td>{{ dessert.description }}</td>
-                        <td>£{{ dessert.price|floatformat:2 }}</td>      
-                        <td>
-                            <a href="/edit/{{ dessert.id }}">Edit</a>
-                        </td>
-                        <td>
-                            <a href="/delete/{{ dessert.id }}" class="red">Delete</a>
-                        </td>                                 
-                    </tr>                            
-                    {% endfor %}
-                </table>          
+            <div class="mb-5">
+                <!-- Mains Menu Items -->    
+                <h2 class="red">Desserts</h2>    
+                {% for dessert in desserts %}
+                <div class="row">
+                    <div class="col-4">
+                        <p class="small">{{ dessert.title }}</p>
+                    </div>
+                    <div class="col-5">
+                        <p class="small">{{ dessert.description }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small">£{{ dessert.price|floatformat:2 }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/edit/{{ main.id }}">Edit</a></p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/delete/{{ main.id }}" class="red">Delete</a></p>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </div>
         {% else %}

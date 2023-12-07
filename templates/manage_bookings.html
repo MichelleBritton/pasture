@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load active_link_tags %}
 {% block title %}
     <title>Pasture | Manage Bookings</title>  
 {% endblock title %}
@@ -17,8 +18,8 @@
             <!-- Sub Navigation -->
             <div class="d-flex justify-content-end pb-5">                
                 <ul class="d-flex sub-nav">
-                    <li><a href="{% url 'manage_bookings' %}" class="red px-5">Manage Bookings</a></li>
-                    <li><a href="{% url 'manage_menus' %}" class="red">Manage Menus</a></li>
+                    <li><a href="{% url 'manage_bookings' %}" class="red px-5 {% active_link 'manage_bookings' 'active' strict=True %}">Manage Bookings</a></li>
+                    <li><a href="{% url 'manage_menus' %}" class="red {% active_link 'manage_menus' 'active' strict=True %}">Manage Menus</a></li>
                 </ul>
             </div>  
             <!-- Filter -->

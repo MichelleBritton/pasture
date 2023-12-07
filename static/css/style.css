@@ -93,6 +93,9 @@ a:after {
 a:hover:not(.active):after {
     width: 100%;
 }
+.border-top {
+    border-color: #915050 !important;
+}
 
 /* Header
 ------------------------------------------------------------------*/

@@ -12,8 +12,18 @@
         </div>
     </section>
     <!-- Content Area -->
-    <section class="text-area">
+    <section class="text-area profile">
         {% if request.user.is_staff %}
+        <div class="container-fluid">   
+            <!-- Sub Navigation -->
+            <div class="d-flex justify-content-end pb-5">                
+                <ul class="d-flex sub-nav">
+                    <li><a href="{% url 'manage_bookings' %}" class="red px-5">Manage Bookings</a></li>
+                    <li><a href="{% url 'manage_menus' %}" class="red">Manage Menus</a></li>
+                </ul>
+            </div>  
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 offset-md-2">
@@ -21,7 +31,7 @@
                     <p>Please complete the form below to make a reservation.</p>
                     <!-- Booking Form-->                
                     <form method="post">
-                        {{ booking_form | crispy }}
+                        {{ menu_form | crispy }}
                         {% csrf_token %}
                         <button type="submit" class="btn btn-signup btn-lg">Submit</button> 
                     </form>

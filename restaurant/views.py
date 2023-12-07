@@ -12,8 +12,8 @@ def home(request):
     Render Home page
     """
     return render(request, 'index.html')
-
-
+    
+    
 def book(request):
     """
     Render Book page and display booking form
@@ -117,6 +117,7 @@ def staff_profile(request):
     }
     return render(request, 'staff_profile.html', context)
 
+
 def manage_bookings(request):
     """
     Render Manage Bookings page to display all bookings
@@ -131,3 +132,8 @@ def manage_bookings(request):
         "booking_filter": booking_filter,
     }
     return render(request, 'manage_bookings.html', context)
+
+
+def menu(request):
+
+    return render(request, 'menu.html')

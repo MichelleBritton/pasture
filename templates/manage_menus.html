@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load active_link_tags %}
 {% block title %}
     <title>Pasture | Manage Menus</title>  
 {% endblock title %}
@@ -8,7 +9,7 @@
     <!-- Hero Image  -->
     <section class="generic-img d-flex justify-content-center align-items-end text-center white">
         <div class="title-panel p-5">
-            <h1>Book a Table</h1>            
+            <h1>Manage Menus</h1>            
         </div>
     </section>
     <!-- Content Area -->
@@ -18,8 +19,8 @@
             <!-- Sub Navigation -->
             <div class="d-flex justify-content-end pb-5">                
                 <ul class="d-flex sub-nav">
-                    <li><a href="{% url 'manage_bookings' %}" class="red px-5">Manage Bookings</a></li>
-                    <li><a href="{% url 'manage_menus' %}" class="red">Manage Menus</a></li>
+                    <li><a href="{% url 'manage_bookings' %}" class="red px-5 {% active_link 'manage_bookings' 'active' strict=True %}">Manage Bookings</a></li>
+                    <li><a href="{% url 'manage_menus' %}" class="red {% active_link 'manage_menus' 'active' strict=True %}">Manage Menus</a></li>
                 </ul>
             </div>  
         </div>
@@ -27,8 +28,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 offset-md-2">
-                    <h2 class="red">Hello {{ user.username }}</h2>
-                    <p>Please complete the form below to make a reservation.</p>
+                    <p>Please complete the form below to add a menu item.</p>
                     <!-- Booking Form-->                
                     <form method="post">
                         {{ menu_form | crispy }}
@@ -37,7 +37,65 @@
                     </form>
                 </div>
             </div>
-        </div>        
+        </div> 
+        
+        <!-- Starters Menu Items -->    
+        <h2 class="red">Starters</h2>        
+        <div class="table-responsive">
+            <table class="table">
+                {% for starter in starters %}
+                <tr>                                
+                    <td>{{ starter.title }}</td>
+                    <td>{{ starter.description }}</td>
+                    <td>£{{ starter.price|floatformat:2 }}</td> 
+                    <td>
+                        <a href="/edit/{{ starter.id }}">Edit</a>
+                    </td>
+                    <td>
+                        <a href="/delete/{{ starter.id }}" class="red">Delete</a>
+                    </td>                                     
+                </tr>                            
+                {% endfor %}
+            </table>          
+        </div>
+        <!-- Mains Menu Items -->    
+        <h2 class="red">Mains</h2>        
+        <div class="table-responsive">
+            <table class="table">
+                {% for main in mains %}
+                <tr>                                
+                    <td>{{ main.title }}</td>
+                    <td>{{ main.description }}</td>
+                    <td>£{{ main.price|floatformat:2 }}</td>        
+                    <td>
+                        <a href="/edit/{{ main.id }}">Edit</a>
+                    </td>
+                    <td>
+                        <a href="/delete/{{ main.id }}" class="red">Delete</a>
+                    </td>                               
+                </tr>                            
+                {% endfor %}
+            </table>          
+        </div>
+        <!-- Desserts Menu Items -->    
+        <h2 class="red">Desserts</h2>        
+        <div class="table-responsive">
+            <table class="table">
+                {% for dessert in desserts %}
+                <tr>                                
+                    <td>{{ dessert.title }}</td>
+                    <td>{{ dessert.description }}</td>
+                    <td>£{{ dessert.price|floatformat:2 }}</td>      
+                    <td>
+                        <a href="/edit/{{ dessert.id }}">Edit</a>
+                    </td>
+                    <td>
+                        <a href="/delete/{{ dessert.id }}" class="red">Delete</a>
+                    </td>                                 
+                </tr>                            
+                {% endfor %}
+            </table>          
+        </div>
         {% else %}
         <p class="text-center">You must be a member of staff and <a href="{% url 'account_login' %}">login</a> to view this page.</p>
         {% endif %}

@@ -173,10 +173,15 @@ def manage_menus(request):
                 messages.error(request, menu_form.errors[error])           
             menu_form = MenuForm()
 
-    return render(
-        request,
-        'manage_menus.html',
-        {
-            "menu_form": MenuForm()
-        },
-    )
+    starters = Menu.objects.filter(type=1).values()
+    mains = Menu.objects.filter(type=2).values()
+    desserts = Menu.objects.filter(type=3).values()
+
+    context = {
+        "menu_form": MenuForm(),
+        'starters': starters,
+        'mains': mains,
+        'desserts': desserts,
+    }
+
+    return render(request, 'manage_menus.html', context,)

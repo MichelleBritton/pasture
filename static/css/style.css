@@ -216,6 +216,7 @@ a:hover:not(.active):after {
 }
 .text-area button:hover {
     background: #915050;
+    color: #fff;
 }
 
 /* Sub Nav on Staff Profile Page

@@ -30,4 +30,5 @@ urlpatterns = [
     path('menu/', views.menu, name='menu'),
     path('manage_menus/', views.manage_menus, name='manage_menus'),
     path('edit_menu/<menu_id>', views.edit_menu, name='edit_menu'),
+    path('delete_menu/<menu_id>', views.delete_menu, name='delete_menu'),
 ]

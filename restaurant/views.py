@@ -213,3 +213,20 @@ def edit_menu(request, menu_id):
     }
 
     return render(request, "edit_menu.html", context)
+
+
+def delete_menu(request, menu_id):
+    """ 
+    Render Delete Menu page and delete menu item on confirmation
+    """
+    # Get a copy of the menu item from the database
+    menu_item = get_object_or_404(Menu, id=menu_id)
+
+    # If the user clicks on yes then delete the menu item
+    # Otherwise, return to Manage Menus page
+    if request.method == "POST":
+        menu_item.delete()
+        return redirect('manage_menus')
+
+    # If it is a GET request then render the delete confirmation page
+    return render(request, "delete_menu.html")

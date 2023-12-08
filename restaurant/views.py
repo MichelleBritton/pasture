@@ -185,3 +185,31 @@ def manage_menus(request):
     }
 
     return render(request, 'manage_menus.html', context,)
+
+
+def edit_menu(request, menu_id):
+    """ 
+    Render Edit Menu page
+    """
+    # Get a copy of the menu item from the database
+    menu_item = get_object_or_404(Menu, id=menu_id)
+    if request.method == 'POST':
+        form = MenuForm(request.POST, instance=menu_item)
+        if form.is_valid():
+            form.save()
+            messages.success(request,
+                'This menu item has been changed')            
+            return redirect('manage_menus')
+            
+        else:
+            #messages.error(request, '')
+            form = MenuForm()
+
+    # Create an instance of the menu form and return it to the template in the context 
+    # to pre-populate the form with current menu item to edit
+    form = MenuForm(instance=menu_item)
+    context = {
+        'form' : form
+    }
+
+    return render(request, "edit_menu.html", context)

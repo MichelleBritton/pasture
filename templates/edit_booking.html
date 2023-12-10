@@ -14,9 +14,8 @@
     <!-- Content Area -->
     <section class="text-area profile">
         {% if user.is_authenticated %}
-        <div class="container-fluid">          
-            <h2 class="red">Hello {{ user.username }}</h2>                                
-            <p>Please make any changes to your reservation using the form below.</p>
+        <div class="container-fluid">                                        
+            <p>Please make any changes to the reservation using the form below.</p>
                 <!-- Booking Form-->                
                 <form method="post">
                     {{ form | crispy }}

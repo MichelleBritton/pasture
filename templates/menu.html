@@ -57,5 +57,20 @@
             </div>
             {% endfor %}
         </div>  
+        <!-- Sides Menu Items -->   
+        <div class="container mb-5">
+            <h2 class="red text-center">Sides</h2>  
+            {% for side in sides %}
+            <div class="row">
+                <div class="col-8">
+                    <h3>{{ side.title }}</h3>
+                    <p class="small">{{ side.description }}</p>
+                </div>
+                <div class="col-2 offset-2">
+                    <p>£{{ side.price|floatformat:2 }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>  
     </section>
 {%endblock%}

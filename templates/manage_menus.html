@@ -87,7 +87,7 @@
                 {% endfor %}
             </div>
             <div class="mb-5">
-                <!-- Mains Menu Items -->    
+                <!-- Desserts Menu Items -->    
                 <h2 class="red">Desserts</h2>    
                 {% for dessert in desserts %}
                 <div class="row">
@@ -105,6 +105,29 @@
                     </div>
                     <div class="col-1">
                         <p class="small"><a href="/delete_menu/{{ dessert.id }}" class="red">Delete</a></p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="mb-5">
+                <!-- Sides Menu Items -->    
+                <h2 class="red">Sides</h2>    
+                {% for side in sides %}
+                <div class="row">
+                    <div class="col-4">
+                        <p class="small">{{ side.title }}</p>
+                    </div>
+                    <div class="col-5">
+                        <p class="small">{{ side.description }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small">£{{ side.price|floatformat:2 }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/edit_menu/{{ side.id }}">Edit</a></p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/delete_menu/{{ side.id }}" class="red">Delete</a></p>
                     </div>
                 </div>
                 {% endfor %}

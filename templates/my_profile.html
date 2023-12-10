@@ -44,6 +44,9 @@
                     {% endfor %}
                 </table>          
             </div>
+            <div class="text-center pt-5">
+                <a href="{% url 'book' %}" class="red">Create New Reservation</a>
+            </div>            
         </div>        
         {% else %}
         <p class="text-center">You must <a href="{% url 'account_login' %}">login</a> to view this page.</p>

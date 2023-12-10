@@ -23,15 +23,14 @@
                 </ul>
             </div>  
             <!-- Filter -->
-            <div class="d-flex">
+            <div class="d-flex border-bottom border-4 mb-5 pb-5">
                 <p class="pe-5">Filter bookings by Name or Date:</p>
                 <form method="GET" class="pb-5">
                     {{ booking_filter.form.name }}
                     {{ booking_filter.form.date }}
                     <button class="btn btn-lg" type="submit">Search</button>
                 </form>  
-            </div>
-                         
+            </div>                         
             <!-- All reservations -->            
             <div class="table-responsive">
                 <table class="table table-striped">

@@ -15,7 +15,8 @@ TIMES = (
 TYPES = (
     (1, 'Starter'),
     (2, 'Main'),
-    (3, 'Dessert')
+    (3, 'Dessert'),
+    (4, 'Side')
 )
 
 

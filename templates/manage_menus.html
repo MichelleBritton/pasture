@@ -101,10 +101,10 @@
                         <p class="small">£{{ dessert.price|floatformat:2 }}</p>
                     </div>
                     <div class="col-1">
-                        <p class="small"><a href="/edit_menu/{{ main.id }}">Edit</a></p>
+                        <p class="small"><a href="/edit_menu/{{ dessert.id }}">Edit</a></p>
                     </div>
                     <div class="col-1">
-                        <p class="small"><a href="/delete_menu/{{ main.id }}" class="red">Delete</a></p>
+                        <p class="small"><a href="/delete_menu/{{ dessert.id }}" class="red">Delete</a></p>
                     </div>
                 </div>
                 {% endfor %}

@@ -87,29 +87,6 @@
                 {% endfor %}
             </div>
             <div class="mb-5">
-                <!-- Desserts Menu Items -->    
-                <h2 class="red">Desserts</h2>    
-                {% for dessert in desserts %}
-                <div class="row">
-                    <div class="col-4">
-                        <p class="small">{{ dessert.title }}</p>
-                    </div>
-                    <div class="col-5">
-                        <p class="small">{{ dessert.description }}</p>
-                    </div>
-                    <div class="col-1">
-                        <p class="small">£{{ dessert.price|floatformat:2 }}</p>
-                    </div>
-                    <div class="col-1">
-                        <p class="small"><a href="/edit_menu/{{ dessert.id }}">Edit</a></p>
-                    </div>
-                    <div class="col-1">
-                        <p class="small"><a href="/delete_menu/{{ dessert.id }}" class="red">Delete</a></p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="mb-5">
                 <!-- Sides Menu Items -->    
                 <h2 class="red">Sides</h2>    
                 {% for side in sides %}
@@ -128,6 +105,52 @@
                     </div>
                     <div class="col-1">
                         <p class="small"><a href="/delete_menu/{{ side.id }}" class="red">Delete</a></p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="mb-5">
+                <!-- Sauces Menu Items -->    
+                <h2 class="red">Sauces</h2>    
+                {% for sauce in sauces %}
+                <div class="row">
+                    <div class="col-4">
+                        <p class="small">{{ sauce.title }}</p>
+                    </div>
+                    <div class="col-5">
+                        <p class="small">{{ sauce.description }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small">£{{ sauce.price|floatformat:2 }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/edit_menu/{{ sauce.id }}">Edit</a></p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/delete_menu/{{ sauce.id }}" class="red">Delete</a></p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="mb-5">
+                <!-- Desserts Menu Items -->    
+                <h2 class="red">Desserts</h2>    
+                {% for dessert in desserts %}
+                <div class="row">
+                    <div class="col-4">
+                        <p class="small">{{ dessert.title }}</p>
+                    </div>
+                    <div class="col-5">
+                        <p class="small">{{ dessert.description }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small">£{{ dessert.price|floatformat:2 }}</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/edit_menu/{{ dessert.id }}">Edit</a></p>
+                    </div>
+                    <div class="col-1">
+                        <p class="small"><a href="/delete_menu/{{ dessert.id }}" class="red">Delete</a></p>
                     </div>
                 </div>
                 {% endfor %}

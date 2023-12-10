@@ -42,6 +42,36 @@
             </div>
             {% endfor %}
         </div>  
+         <!-- Sides Menu Items -->   
+         <div class="container mb-5">
+            <h2 class="red text-center">Sides</h2>  
+            {% for side in sides %}
+            <div class="row">
+                <div class="col-8">
+                    <h3>{{ side.title }}</h3>
+                    <p class="small">{{ side.description }}</p>
+                </div>
+                <div class="col-2 offset-2">
+                    <p>£{{ side.price|floatformat:2 }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>  
+         <!-- Sauces Menu Items -->   
+         <div class="container mb-5">
+            <h2 class="red text-center">Sauces</h2>  
+            {% for sauce in sauces %}
+            <div class="row">
+                <div class="col-8">
+                    <h3>{{ sauce.title }}</h3>
+                    <p class="small">{{ sauce.description }}</p>
+                </div>
+                <div class="col-2 offset-2">
+                    <p>£{{ sauce.price|floatformat:2 }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>  
         <!-- Desserts Menu Items -->   
         <div class="container mb-5">
             <h2 class="red text-center">Desserts</h2>  
@@ -53,21 +83,6 @@
                 </div>
                 <div class="col-2 offset-2">
                     <p>£{{ dessert.price|floatformat:2 }}</p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>  
-        <!-- Sides Menu Items -->   
-        <div class="container mb-5">
-            <h2 class="red text-center">Sides</h2>  
-            {% for side in sides %}
-            <div class="row">
-                <div class="col-8">
-                    <h3>{{ side.title }}</h3>
-                    <p class="small">{{ side.description }}</p>
-                </div>
-                <div class="col-2 offset-2">
-                    <p>£{{ side.price|floatformat:2 }}</p>
                 </div>
             </div>
             {% endfor %}

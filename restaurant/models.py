@@ -16,7 +16,8 @@ TYPES = (
     (1, 'Starter'),
     (2, 'Main'),
     (3, 'Dessert'),
-    (4, 'Side')
+    (4, 'Side'),
+    (5, 'Sauce'),
 )
 
 

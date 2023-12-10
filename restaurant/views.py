@@ -145,12 +145,14 @@ def menu(request):
     mains = Menu.objects.filter(type=2).values()
     desserts = Menu.objects.filter(type=3).values()
     sides = Menu.objects.filter(type=4).values()
+    sauces = Menu.objects.filter(type=5).values()
 
     context = {
         'starters': starters,
         'mains': mains,
         'desserts': desserts,
-        'sides': sides
+        'sides': sides,
+        'sauces': sauces
     }
 
     return render(request, 'menu.html', context)
@@ -179,13 +181,15 @@ def manage_menus(request):
     mains = Menu.objects.filter(type=2).values()
     desserts = Menu.objects.filter(type=3).values()
     sides = Menu.objects.filter(type=4).values()
+    sauces = Menu.objects.filter(type=5).values()
 
     context = {
         "menu_form": MenuForm(),
         'starters': starters,
         'mains': mains,
         'desserts': desserts,
-        'sides': sides
+        'sides': sides,
+        'sauces': sauces
     }
 
     return render(request, 'manage_menus.html', context,)

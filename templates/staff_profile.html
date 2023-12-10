@@ -25,6 +25,7 @@
             </div>  
             <!-- Today's reservations -->
             <p>Here are the reservations for today:</p>
+            {% if booking %}
             <div class="table-responsive">
                 <table class="table table-striped">
                     <tr>
@@ -45,6 +46,9 @@
                     {% endfor %}
                 </table>          
             </div>
+            {% else %}
+                <p>There are no booking today.</p>
+            {% endif %}
         </div>        
         {% else %}
         <p class="text-center">You must be a member of staff and <a href="{% url 'account_login' %}">login</a> to view this page.</p>

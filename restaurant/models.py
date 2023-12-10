@@ -50,6 +50,6 @@ class Menu(models.Model):
     """
     type = models.IntegerField(choices=TYPES)
     title = models.CharField(max_length=200, unique=True)
-    description = models.TextField()
+    description = models.TextField(blank=True)
     price = models.FloatField()
 

@@ -15,14 +15,17 @@ h2 {
     font: 400 2rem 'Galada', cursive;
 }
 h3 {
-    font: 700 1.8rem 'Open Sans', sans-serif;
+    font: 700 1.2rem 'Open Sans', sans-serif;
 }
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
-td {
-    font-size: 1.2em;
+p.small {
+    font-size: 1rem;
 }
+/* td {
+    font-size: 1.2rem;
+} */
 .welcome-panel .links {
     font-size: 1.8rem;
 }
@@ -37,15 +40,15 @@ td {
     h2 {
         font-size: 2.2rem;
     }
-    h3 {
-        font-size: 2rem;
-    }
-    body, p {
+    h3, body, p {
         font-size: 1.8rem;
     }
-    td {
+    p.small {
         font-size: 1.4rem;
     }
+    /* td {
+        font-size: 1.4rem;
+    } */
     .welcome-panel .links {
         font-size: 2.5rem;
     }
@@ -61,15 +64,15 @@ td {
     h2 {
         font-size: 2.5rem;
     }
-    h3 {
-        font-size: 2.3rem;
-    }
-    body, p {
+    h3, body, p {
         font-size: 2rem;
     }
-    td {
+    p.small {
         font-size: 1.6rem;
     }
+    /* td {
+        font-size: 1.6rem;
+    } */
     .welcome-panel .links {
         font-size: 3rem;
     }
@@ -113,11 +116,16 @@ a:hover:not(.active):after {
     background: rgba(145,80,80, 0.7);
 }
 .logo-container {
-    width: 20%;
+    width: 30%;
 }
 #logo {
     height: auto;
     width: 100%;
+}
+@media only screen and (min-width:768px) {	
+    .logo-container {
+        width: 20%;
+    }
 }
 @media only screen and (min-width:1400px) {	
     .logo-container {
@@ -177,9 +185,11 @@ a:hover:not(.active):after {
 .welcome-panel .links {
     list-style: none;
 }
-.welcome-panel .links li:last-child:before {
-    content: "|";
-    margin: 0 10px;
+@media only screen and (min-width:768px) {	
+    .welcome-panel .links li:last-child:before {
+        content: "|";
+        margin: 0 10px;
+    }
 }
 
 /* Generic Hero Image 

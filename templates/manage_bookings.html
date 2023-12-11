@@ -31,35 +31,49 @@
                     <button class="btn btn-lg" type="submit">Search</button>
                 </form>  
             </div>                         
-            <!-- All reservations -->            
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>No. of Guests</th>
-                        <th>Notes</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                    {% for booking in all_bookings %}
-                    <tr>                                
-                        <td>{{ booking.name }}</td>
-                        <td>{{ booking.date|date:"d/m/y" }}</td>
-                        <td>{{ booking.get_time_display }}</td>
-                        <td>{{ booking.no_of_guests }}</td>
-                        <td>{{ booking.notes }}</td>       
-                        <td>
-                            <a href="/edit/{{ booking.id }}">Edit</a>
-                        </td>
-                        <td>
-                            <a href="/delete/{{ booking.id }}" class="red">Delete</a>
-                        </td>                
-                    </tr>                            
-                    {% endfor %}
-                </table>          
+            <!-- All reservations -->   
+            <div class="d-none d-xxl-flex row mt-5">
+                <div class="col-xxl-3">
+                    <p><strong>Name</strong></p>
+                </div>
+                <div class="col-xxl-1">
+                    <p><strong>Date</strong></p>
+                </div>
+                <div class="col-xxl-2">
+                    <p><strong>Time</strong></p>
+                </div>
+                <div class="col-xxl-1">
+                    <p><strong>No. of Guests</strong></p>
+                </div>
+                <div class="col-xxl-3">
+                    <p><strong>Notes</strong></p>
+                </div>
             </div>
+            {% for booking in all_bookings %}
+            <div class="row border-top border-2 mt-2 pt-4">
+                <div class="col-12 col-xxl-3">
+                    <p><span class="d-xxl-none"><strong>Name:</strong></span> {{ booking.name }}</p>
+                </div>
+                <div class="col-12 col-xxl-1">
+                    <p><span class="d-xxl-none"><strong>Date:</strong></span> {{ booking.date|date:"d/m/y" }}</p>
+                </div>
+                <div class="col-12 col-xxl-2">
+                    <p><span class="d-xl-none"><strong>Time:</strong></span> {{ booking.get_time_display }}</p>
+                </div>
+                <div class="col-12 col-xxl-1">
+                    <p><span class="d-xxl-none"><strong>No. of Guests:</strong></span> {{ booking.no_of_guests }}</p>
+                </div>
+                <div class="col-12 col-xxl-3">
+                    <p><span class="d-xl-none"><strong>Notes:</strong></span> {{ booking.notes }}</p>
+                </div>
+                <div class="col-3 col-xxl-1">
+                    <p><a href="/edit/{{ booking.id }}">Edit</a></p>
+                </div>
+                <div class="col-3 col-xxl-1">
+                    <p><a href="/delete/{{ booking.id }}" class="red">Delete</a></p>
+                </div>
+            </div>
+            {% endfor %}
         </div>        
         {% else %}
         <p class="text-center">You must be a member of staff and <a href="{% url 'account_login' %}">login</a> to view this page.</p>

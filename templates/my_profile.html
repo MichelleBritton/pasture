@@ -39,7 +39,7 @@
                     <p><span class="d-xxl-none"><strong>Name:</strong></span> {{ booking.name }}</p>
                 </div>
                 <div class="col-12 col-xxl-1">
-                    <p><span class="d-xxl-none"><strong>Date:</strong></span> {{ booking.date|date:"m/d/y" }}</p>
+                    <p><span class="d-xxl-none"><strong>Date:</strong></span> {{ booking.date|date:"d/m/y" }}</p>
                 </div>
                 <div class="col-12 col-xxl-2">
                     <p><span class="d-xl-none"><strong>Time:</strong></span> {{ booking.get_time_display }}</p>

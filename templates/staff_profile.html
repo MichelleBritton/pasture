@@ -38,7 +38,7 @@
                     {% for booking in bookings %}
                     <tr>                                
                         <td>{{ booking.name }}</td>
-                        <td>{{ booking.date|date:"m/d/y" }}</td>
+                        <td>{{ booking.date|date:"d/m/y" }}</td>
                         <td>{{ booking.get_time_display }}</td>
                         <td>{{ booking.no_of_guests }}</td>
                         <td>{{ booking.notes }}</td>                       
@@ -47,7 +47,7 @@
                 </table>          
             </div>
             {% else %}
-                <p>There are no booking today.</p>
+                <p>There are no reservations today.</p>
             {% endif %}
         </div>        
         {% else %}

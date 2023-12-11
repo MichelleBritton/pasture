@@ -8,7 +8,7 @@ class DateInput(forms.DateInput):
     Create a widget for date input
     """
     input_type = 'date'
-    format = '%m/%d/%y'
+    format = '%d/%m/%y'
 
 
 class BookTableForm(forms.ModelForm):

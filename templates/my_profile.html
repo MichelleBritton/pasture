@@ -16,50 +16,44 @@
         <div class="container-fluid">          
             <h2 class="red">Hello {{ user.username }}</h2>
             <p>Welcome to your dashboard where you can view, edit and delete your reservations.</p>
-            <div class="row border-bottom border-2 my-5 pb-2">
-                <div class="col-2">
+            <div class="d-none d-xxl-flex row mt-5">
+                <div class="col-xxl-3">
                     <p><strong>Name</strong></p>
                 </div>
-                <div class="col-2">
+                <div class="col-xxl-1">
                     <p><strong>Date</strong></p>
                 </div>
-                <div class="col-2">
+                <div class="col-xxl-2">
                     <p><strong>Time</strong></p>
                 </div>
-                <div class="col-1">
+                <div class="col-xxl-1">
                     <p><strong>No. of Guests</strong></p>
                 </div>
-                <div class="col-3">
+                <div class="col-xxl-3">
                     <p><strong>Notes</strong></p>
-                </div>
-                <div class="col-1">
-                    <p><strong>Edit</strong></p>
-                </div>
-                <div class="col-1">
-                    <p><strong>Delete</strong></p>
                 </div>
             </div>
             {% for booking in bookings %}
-            <div class="row">
-                <div class="col-2">
-                    <p>{{ booking.name }}</p>
+            <div class="row border-top border-3 mt-2 pt-4">
+                <div class="col-12 col-xxl-3">
+                    <p><span class="d-xxl-none"><strong>Name:</strong></span> {{ booking.name }}</p>
                 </div>
-                <div class="col-2">
-                    <p>{{ booking.date|date:"m/d/y" }}</p>
+                <div class="col-12 col-xxl-1">
+                    <p><span class="d-xxl-none"><strong>Date:</strong></span> {{ booking.date|date:"m/d/y" }}</p>
                 </div>
-                <div class="col-2">
-                    <p>{{ booking.get_time_display }}</p>
+                <div class="col-12 col-xxl-2">
+                    <p><span class="d-xl-none"><strong>Time:</strong></span> {{ booking.get_time_display }}</p>
                 </div>
-                <div class="col-1">
-                    <p>{{ booking.no_of_guests }}</p>
+                <div class="col-12 col-xxl-1">
+                    <p><span class="d-xxl-none"><strong>No. of Guests:</strong></span> {{ booking.no_of_guests }}</p>
                 </div>
-                <div class="col-3">
-                    <p>{{ booking.notes }}</p>
+                <div class="col-12 col-xxl-3">
+                    <p><span class="d-xl-none"><strong>Notes:</strong></span> {{ booking.notes }}</p>
                 </div>
-                <div class="col-1">
+                <div class="col-3 col-xxl-1">
                     <p><a href="/edit/{{ booking.id }}">Edit</a></p>
                 </div>
-                <div class="col-1">
+                <div class="col-3 col-xxl-1">
                     <p><a href="/delete/{{ booking.id }}" class="red">Delete</a></p>
                 </div>
             </div>

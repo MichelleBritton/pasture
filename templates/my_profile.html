@@ -45,7 +45,7 @@
                     <p>{{ booking.name }}</p>
                 </div>
                 <div class="col-2">
-                    <p>{{ booking.date }}</p>
+                    <p>{{ booking.date|date:"m/d/y" }}</p>
                 </div>
                 <div class="col-2">
                     <p>{{ booking.get_time_display }}</p>

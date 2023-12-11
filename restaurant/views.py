@@ -32,7 +32,8 @@ def book(request):
                 'Thank you, your reservation has been made')
             return redirect('my_profile')
         else:
-            messages.error(request, 'Sorry, the date and time you have requested has already been booked, please select another date or time')
+            for error in booking_form.errors:
+                messages.error(request, booking_form.errors[error])    
             booking_form = BookTableForm()
 
     return render(
@@ -67,13 +68,14 @@ def edit_booking(request, booking_id):
         if form.is_valid():
             form.save()
             messages.success(request,
-                'Thank you, your reservation has been changed')
+                'Thank you, the reservation has been changed')
             if request.user.is_staff:
                 return redirect('manage_bookings')
             else:
                 return redirect('my_profile')
         else:
-            messages.error(request, 'Sorry, the date and time you have requested has already been booked, please select another date or time')
+            for error in form.errors:
+                messages.error(request, form.errors[error])    
             form = BookTableForm()
 
     # Create an instance of the booking form and return it to the template in the context 
@@ -207,10 +209,10 @@ def edit_menu(request, menu_id):
             form.save()
             messages.success(request,
                 'This menu item has been changed')            
-            return redirect('manage_menus')
-            
+            return redirect('manage_menus')            
         else:
-            #messages.error(request, '')
+            for error in form.errors:
+                messages.error(request, form.errors[error])    
             form = MenuForm()
 
     # Create an instance of the menu form and return it to the template in the context 
@@ -234,6 +236,8 @@ def delete_menu(request, menu_id):
     # Otherwise, return to Manage Menus page
     if request.method == "POST":
         menu_item.delete()
+        messages.success(request,
+                'This menu item has been deleted')  
         return redirect('manage_menus')
 
     # If it is a GET request then render the delete confirmation page

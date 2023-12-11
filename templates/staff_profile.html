@@ -26,26 +26,42 @@
             <!-- Today's reservations -->
             <p>Here are the reservations for today:</p>
             {% if bookings %}
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>No. of Guests</th>
-                        <th>Notes</th>
-                    </tr>
-                    {% for booking in bookings %}
-                    <tr>                                
-                        <td>{{ booking.name }}</td>
-                        <td>{{ booking.date|date:"d/m/y" }}</td>
-                        <td>{{ booking.get_time_display }}</td>
-                        <td>{{ booking.no_of_guests }}</td>
-                        <td>{{ booking.notes }}</td>                       
-                    </tr>                            
-                    {% endfor %}
-                </table>          
-            </div>
+                <div class="d-none d-xxl-flex row mt-5">
+                    <div class="col-xxl-3">
+                        <p><strong>Name</strong></p>
+                    </div>
+                    <div class="col-xxl-1">
+                        <p><strong>Date</strong></p>
+                    </div>
+                    <div class="col-xxl-2">
+                        <p><strong>Time</strong></p>
+                    </div>
+                    <div class="col-xxl-1">
+                        <p><strong>No. of Guests</strong></p>
+                    </div>
+                    <div class="col-xxl-3">
+                        <p><strong>Notes</strong></p>
+                    </div>
+                </div>
+                {% for booking in bookings %}
+                    <div class="row border-top border-2 mt-2 pt-4">
+                        <div class="col-12 col-xxl-3">
+                            <p><span class="d-xxl-none"><strong>Name:</strong></span> {{ booking.name }}</p>
+                        </div>
+                        <div class="col-12 col-xxl-1">
+                            <p><span class="d-xxl-none"><strong>Date:</strong></span> {{ booking.date|date:"d/m/y" }}</p>
+                        </div>
+                        <div class="col-12 col-xxl-2">
+                            <p><span class="d-xl-none"><strong>Time:</strong></span> {{ booking.get_time_display }}</p>
+                        </div>
+                        <div class="col-12 col-xxl-1">
+                            <p><span class="d-xxl-none"><strong>No. of Guests:</strong></span> {{ booking.no_of_guests }}</p>
+                        </div>
+                        <div class="col-12 col-xxl-3">
+                            <p><span class="d-xl-none"><strong>Notes:</strong></span> {{ booking.notes }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             {% else %}
                 <p>There are no reservations today.</p>
             {% endif %}

@@ -189,7 +189,7 @@ To store data for this project, the PostgreSQL database was used.
 #### Colour Scheme
 I used the logo colour as a base to create a colour palette using Adobe Colour.
 
-![Colour Palette](documentation/images/colour-palette.png)
+![Colour Palette](documentation/images/color-palette.png)
 
 #### Fonts
 The following fonts were used for this project which were imported from Google Fonts (link)

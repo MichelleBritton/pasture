@@ -133,3 +133,37 @@ Create a responsive website that is fully functional for desktop, tablet and mob
 
 - Ensure that users have access to their own profile page
 - Ensure that staff members have access to the staff management page
+
+### Structure
+
+The website comprises a total of thirteen pages.  If there has been no authentication the user will only be able to see five pages.  Once logged in as a customer, the customer will also be able to view their own profile page.  If logged in as a staff member, the staff member will be able to see a Staff Management page which links to a Manage Booking page and Edit Menus page. 
+
+**Home Page:** The home page is visible to all users and contains a main image with links to View Menu and Book a table.  Beneath that is some information about the restaurant.
+
+**Menu Page:** The menu page is visible to all users and displays the menu. The menu content is driven by the Manage Menus page below.
+
+**Book Page:** If the user is logged in they will be able to complete a form to make a reservation.  If they are not, they will be informed that that they either need to register or login.
+
+**Register Page:** The register page is visible to all users.
+
+**Login Page:** The login page is visible to all users.
+
+**Profile Page:** The profile page is only visible to logged in customers. This is where they can view their upcoming reservations, edit and delete them.
+
+**Staff Management Page:** This page is only visible to logged in staff members and will contain two links to the following two pages, together with a list of bookings for the current day.
+
+**Manage Bookings Page:** This page is only visible to logged in staff members and will contain a list of all bookings. The user will be able to filter these by name and date, edit and delete bookings.
+
+**Edit Bookings Page:** This page is only visible to logged in users and staff users when they opt to edit an existing booking, and contains a form which is prepopulated with information from the relevant booking, where the user can make any changes and save them.
+
+**Delete Bookings Page:** This page is only visible to logged in users and staff users when they opt to delete an existing booking. This page asks the user to confirm the deletion.
+
+**Manage Menus Page:** This page is only visible to logged in staff members and will contain a list of menus, with the option to edit or delete them.  There will also be the option to add a new menu item.
+
+**Edit Menus Page:** This page is only visible to logged in staff members when they opt to edit an existing menu item, and contains a form which is prepopulated with information from the relevant menu item, where the user can make any changes and save them.
+
+**Delete Menus Page:** This page is only visible to logged in staff members when they opt to delete an existing menu item. This page asks the user to confirm the deletion.
+
+The following flowchart is a visual representation of the site structure created using Lucid Chart.
+
+![Flowchart](documentation/flowchart/flowchart.png)

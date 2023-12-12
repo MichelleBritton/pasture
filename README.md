@@ -201,3 +201,28 @@ Open Sans - used for the body text
 - Javascript was used to detect when the user had scrolled down the page and reduce teh size of the header, by replacing the logo image with a smaller text version, as the header takes up a lot of space.
 - The main image on the home page has been fixed for a parallax scrolling effect. 
 - All links have an animated hover state
+
+### Agile Methodology
+
+This project was developed using the Agile methodology.
+
+All progress of epics and user story implementation was registered using GitHub. As the user stories were accomplished, they were moved in the GitHub Kanban board from **To Do**, to **In Progress**, **Done** and **Not Implemented** lists.
+
+#### Sprint 1
+- Epic 1 - Initial Setup
+- Epic 2 - Content and Navigation
+
+#### Sprint 2
+- Epic 3 - Authentication
+
+#### Sprint 3
+- Epic 4 - Booking
+
+#### Sprint 4
+- Epic 5 - User Profiles
+
+#### Sprint 5
+- Epic 6 - Menu
+
+#### Sprint 6
+- Epic 7 - Deployment

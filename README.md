@@ -100,3 +100,36 @@ Create a visually appealing website that provides good user experience for both 
 - Provide relevant information
 - Implement features that will be useful to each user role.
 - Have a clear distinction between user roles
+
+### Scope
+
+**Simple and Intuitive User Experience**
+
+- Create a design that is clean and simple with the same layout for each page
+- Each page will contain a header and footer
+- The navigation will be clearly visible and functional on each page
+- Each page will be named appropriately
+- All necessary feedback provided to users
+
+**Responsive**
+
+Create a responsive website that is fully functional for desktop, tablet and mobile devices.
+
+**Relevant Content**
+
+- Provide relevant information about the restaurant
+- Include information regarding location and contact details
+- Include images where necessary
+
+**Features**
+
+- Create a login/register section
+- Create a reservation page which will allow users to book a table for a specific date and time (depending on availability), for an x number of people, together with the ability to add notes i.e. if anyone in the party has an allergy etc
+- Create a profile page where users can view and manage their reservations
+- Create a staff management page where staff can view, filter, edit and delete reservations
+- Create a staff management page where staff can add, edit and delete menu items
+
+**Role based Accounts**
+
+- Ensure that users have access to their own profile page
+- Ensure that staff members have access to the staff management page

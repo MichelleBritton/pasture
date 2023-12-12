@@ -179,4 +179,5 @@ Figma was used to create wireframes for both mobile and desktop.
 #### Database
 To store data for this project, the PostgreSQL database was used.
 
+**Schema**
 ![Schema](documentation/database/database_schema.png)

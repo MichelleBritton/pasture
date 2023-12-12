@@ -167,3 +167,16 @@ The website comprises a total of thirteen pages.  If there has been no authentic
 The following flowchart is a visual representation of the site structure created using Lucid Chart.
 
 ![Flowchart](documentation/flowchart/flowchart.png)
+
+### Skeleton
+
+#### Wireframes
+Figma was used to create wireframes for both mobile and desktop.
+
+[Desktop Wireframe](documentation/wireframes/home-wireframe.pdf)
+[Mobile Wireframe](documentation/wireframes/home-mobile-wireframe.pdf)
+
+#### Database
+To store data for this project, the PostgreSQL database was used.
+
+[Schema](documentation/database/database_schema.png)

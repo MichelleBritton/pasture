@@ -50,41 +50,41 @@ This project was created using the Five Planes of Website Design:
 
 ### Strategy
 **User Stories:**
-| EPIC                     | ID | USER STORY|
-|--------------------------|----|-----------|
-|**Initial Setup**         |    |           |
-|                          | 1A |As a developer, I need to set up a Kanban Board in GitHub so that I can keep track of user story implementation|
-|                          | 1B |As a developer, I need to create the project environment so that it is ready for development|
-|                          | 1C |As a developer, I need to create a base template so that the page structure for each page is in place|
-|**Content and Navigation**|    |           |
-|                          | 2A |As a user, I want the navigation to be clear and visible so that I can easily navigate through the website|
-|                          | 2B |As a user, I want to see the restaurant’s contact details|
-|                          | 2C |As a user, I want to see the restaurant’s opening and closing times|
-|                          | 2D |As a user, I want to see the restaurant's location|
-|                          | 2E |As a user, I want to see relevant information on the website|
-|                          | 2F |As a user, I want a pleasant UX experience so that I am encouraged to make a booking|
-|**Authentication**        |    |           |
-|                          | 3A |As a user, I can create an account so that I can make a reservation|
-|                          | 3B |As a user, I can login to my account using my email and password so that my account is secure|
-|                          | 3C |As a user, I can log out of my account at any time so that my account is secure|
-|                          | 3D |As a user, I can reset my password so that I can keep my account secure and if I have forgotten my password|
-|**Booking**               |    |           |
-|                          | 4A |As a logged in user, I want to be able to make a reservation for a specific date and time|
-|                          | 4B |As a logged in user, I want to be able to make a reservation for x number of people|
-|                          | 4C |As a logged in user, I want to be able to add a note to my reservation detailing any specific requests or details regarding any allergies|
-|**User Profiles**         |    |            |
-|                          | 5A |As a logged in user, I want to be able to view my reservation|
-|                          | 5B |As a logged in user, I want to be able to update my reservation|
-|                          | 5C |As a logged in user, I want to be able to delete my reservation|
-|                          | 5D |As a logged in staff member, I want to be able to see all reservations|
-|                          | 5E |As a logged in staff member, I want to be able to filter the reservations by a specific date so that I can prepare for that day|
-|                          | 5F |As a logged in staff member, I want to be able to update reservations on behalf of customers so that I can make the process as easy as possible for a customer|
-|                          | 5G |As a logged in staff member, I want to be able to delete reservations on behalf of customers so that I can make the process as easy as possible for a customer|
-|**Menu**                  |    |            |
-|                          | 6A |As a user, I want to see menus so I can decide whether I would like to make a reservation|
-|                          | 6B |As a logged in staff member, I want to be able to add new menus|
-|                          | 6C |As a logged in staff member, I want to be able to edit menus|
-|                          | 6D |As a logged in staff member, I want to be able to delete menus|
-|**Deployment**            |    |            |
-|                          | 7A |As a developer, I need to set DEBUG to False in readiness for final deployment|
-|                          | 7B |As a developer, I need to do a final deployment to Heroku so that the site is live|
+| EPIC                       | ID | USER STORY|
+|----------------------------|----|-----------|
+|**Initial Setup**           |    |           |
+|                            | 1A |As a developer, I need to set up a Kanban Board in GitHub so that I can keep track of user story implementation|
+|                            | 1B |As a developer, I need to create the project environment so that it is ready for development|
+|                            | 1C |As a developer, I need to create a base template so that the page structure for each page is in place|
+|**Content and Navigation**  |    |           |
+|                            | 2A |As a user, I want the navigation to be clear and visible so that I can easily navigate through the website|
+|                            | 2B |As a user, I want to see the restaurant’s contact details|
+|                            | 2C |As a user, I want to see the restaurant’s opening and closing times|
+|                            | 2D |As a user, I want to see the restaurant's location|
+|                            | 2E |As a user, I want to see relevant information on the website|
+|                            | 2F |As a user, I want a pleasant UX experience so that I am encouraged to make a booking|
+|**Authentication**          |    |           |
+|                            | 3A |As a user, I can create an account so that I can make a reservation|
+|                            | 3B |As a user, I can login to my account using my email and password so that my account is secure|
+|                            | 3C |As a user, I can log out of my account at any time so that my account is secure|
+|                            | 3D |As a user, I can reset my password so that I can keep my account secure and if I have forgotten my password|
+|**Booking**                 |    |           |
+|                            | 4A |As a logged in user, I want to be able to make a reservation for a specific date and time|
+|                            | 4B |As a logged in user, I want to be able to make a reservation for x number of people|
+|                            | 4C |As a logged in user, I want to be able to add a note to my reservation detailing any specific requests or details regarding any allergies|
+|**User Profiles**           |    |            |
+|                            | 5A |As a logged in user, I want to be able to view my reservation|
+|                            | 5B |As a logged in user, I want to be able to update my reservation|
+|                            | 5C |As a logged in user, I want to be able to delete my reservation|
+|                            | 5D |As a logged in staff member, I want to be able to see all reservations|
+|                            | 5E |As a logged in staff member, I want to be able to filter the reservations by a specific date so that I can prepare for that day|
+|                            | 5F |As a logged in staff member, I want to be able to update reservations on behalf of customers so that I can make the process as easy as possible for a customer|
+|                            | 5G |As a logged in staff member, I want to be able to delete reservations on behalf of customers so that I can make the process as easy as possible for a customer|
+|**Menu**                    |    |            |
+|                            | 6A |As a user, I want to see menus so I can decide whether I would like to make a reservation|
+|                            | 6B |As a logged in staff member, I want to be able to add new menus|
+|                            | 6C |As a logged in staff member, I want to be able to edit menus|
+|                            | 6D |As a logged in staff member, I want to be able to delete menus|
+|**Deployment**              |    |            |
+|                            | 7A |As a developer, I need to set DEBUG to False in readiness for final deployment|
+|                            | 7B |As a developer, I need to do a final deployment to Heroku so that the site is live|

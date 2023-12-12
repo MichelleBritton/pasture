@@ -174,6 +174,7 @@ The following flowchart is a visual representation of the site structure created
 Figma was used to create wireframes for both mobile and desktop.
 
 [Desktop Wireframe](documentation/wireframes/home-wireframe.pdf)
+
 [Mobile Wireframe](documentation/wireframes/home-mobile-wireframe.pdf)
 
 #### Database

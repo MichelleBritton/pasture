@@ -88,3 +88,15 @@ This project was created using the Five Planes of Website Design:
 |**Deployment**              |    |            |
 |                            | 7A |As a developer, I need to set DEBUG to False in readiness for final deployment|
 |                            | 7B |As a developer, I need to do a final deployment to Heroku so that the site is live|
+
+**Project Goal:**
+
+Create a visually appealing website that provides good user experience for both staff members and users.
+
+**Project Objectives:**
+
+- Design a website that provides a simple and intuitive user experience
+- Ensure that the website is responsive
+- Provide relevant information
+- Implement features that will be useful to each user role.
+- Have a clear distinction between user roles

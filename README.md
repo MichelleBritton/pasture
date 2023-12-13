@@ -226,3 +226,25 @@ All progress of epics and user story implementation was registered using GitHub.
 
 #### Sprint 6
 - Epic 7 - Deployment
+
+## Features
+### Existing Features
+#### Create Booking
+This feature enables logged in users to make a reservation by completing the form. The form fields are Name, Phone Number, Date, Time, Number of Guests and Notes. The date field is a date picker and the time contains specific time slots that the user can select. The system will check if the date and time combination already exists in the database and if so, an alert will appear so the user can select a different date or time otherwise an alert will appear to confirm that the reservation has been made.
+
+![Screenshot of the booking form](documentation/screenshots/create-booking.png)
+
+#### Menu
+The menu page contains a list of all the menu items, with details such as title, description and price and are grouped by type i.e. starter, main etc. This page is populated by items in the database that have been created by staff members via the manage menus page.
+
+![Screenshot of the menu](documentation/screenshots/menu.png)
+
+#### Profile
+User accounts have been created using the Django allauth module. This allows information regarding users' reservations to be displayed on the profile page so that logged in users can view, edit and delete their reservations. Reservations are displayed in a list with each having an edit and delete link. Clicking on the edit link will take you to an edit booking page which contains a form prepopulated with that particular booking's details which the user can change and update. Clicking oon the delete link will take you to the delete booking page where they are asked to confirm that they wish to delete the booking.
+
+![Screenshot of the profile and edit/delete bookings](documentation/screenshots/profile.png)
+
+#### Staff Management
+The staff management page displays the bookings for the current day, and if there are no bookings, it will display "There are no reservations for today". There is a sub navigation at the top right of the content area, containing links to the Manage Bookings and Manage Menus pages.
+
+![Screenshot of staff dashboard](documentation/screenshots/staff.png)

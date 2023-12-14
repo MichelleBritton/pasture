@@ -35,4 +35,10 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The address of the restaurant is positioned within the footer of each page|     
 |**Outcome**             |All features tested and passed.| 
 
+|User Story:             |As a user, I want to see relevant information on the website|
+|:--                     |:--                                                      |
+|**Acceptance Criteria:**|The user should be able to easily find information about the restaurant and the food they serve so that they can make an informed choice as to whether to make a reservation|
+|**Summary**             |- On the home page there is some text that gives a brief overview of the restaurant<br>- There is a menu page which details all of the food served|     
+|**Outcome**             |All features tested and passed.| 
+
 Back to [README.MD](README.MD)

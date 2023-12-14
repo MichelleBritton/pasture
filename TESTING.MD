@@ -45,8 +45,8 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The user can login by navigating to the Login page where a form is displayed allowing the user to login with their username and password<br>- A popup alert message appears to confirm that the user is signed in|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I can log out of my account at any time so that my account is secure**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A user should be able to log out|
+|**Summary**             |- When a user is logged in, there is a Logout link in the navigation<br>- When the Logout link has been clicked it takes you to a logout confirmation page for the user to confirm that they wish to log out<br>- A popup alert message appears to confirm that the user has been signed out|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I can reset my password so that I can keep my account secure and if I have forgotten my password**|
 |**Acceptance Criteria:**||

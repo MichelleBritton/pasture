@@ -30,7 +30,7 @@
 - [Testing](#testing)
 - [Deployment](#deployment)
     - [Deploy on Heroku](#deploy-on-heroku)
-    - [Fork the respository](#fork-the-repository)
+    - [Fork the repository](#fork-the-repository)
     - [Clone the repository](#clone-the-repository)
 - [Credits](#credits)
     - [Content](#content) 
@@ -292,6 +292,7 @@ Bootstrap has been used to ensure that the project is responsive and able to be 
 - [Favicon.io](https://favicon.io/) - to generate the favicon
 - [Font Awesome](https://fontawesome.com/) - to add icons in the navbar toggler
 - [Cloudinary](https://cloudinary.com/) - for storing static images
+- [Elephant SQL](https://www.elephantsql.com/) - PostgresSql database
 - [Am I Responsive?](https://ui.dev/amiresponsive) - to generate a screenshot of the website on multiple devices
 - [Shields](https://shields.io/) - to generate badges for inclusion in the README field
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - for testing and debugging the website
@@ -316,3 +317,38 @@ Bootstrap has been used to ensure that the project is responsive and able to be 
 
 ## Testing
 The testing documentation can be found at [TESTING.MD](TESTING.MD)
+
+## Deployment
+### Deploy on Heroku
+The site was deployed to Heroku using the following steps:
+
+- Navigate to heroku.com and create an account
+- Click the "New" button in the top right corner
+- Select "Create new app"
+- Enter the app name
+- Select Region and click "Create app"
+- Go to the Settings tab and click "Reveal config vars"
+- Add any necessary config vars
+- Click the Deploy tab
+- Scroll down to Connect to GitHub and sign in / authorize when prompted
+- Find the repository you want to deploy and click "Connect"
+- Scroll down to Manual deploy and choose the main branch
+- Click "Deploy Branch"
+- The app should now be deployed and you can click on the "View" button to view the live site
+
+### Fork the repository
+Forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+- Navigate to the GitHub Repository you want to fork
+- On the top right of the page under the header, click the "Fork" button
+- This will create a duplicate of the full project in your GitHub Repository.
+
+### Clone the repository
+Navigate to the GitHub Repository you want to clone:
+
+- Click on the "Code" drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the terminal
+- The project will now have been cloned on your local machine for use.

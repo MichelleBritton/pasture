@@ -21,6 +21,8 @@
         - [Menu](#menu)
         - [Profiles](#profiles)
         - [Staff Management](#staff-management)
+        - [Manage Bookings](#manage-bookings)
+        - [Manage Menus](#manage-menus)
     - [Potential Future Features](#potential-future-features)
 - [Responsive Layout and Design](#responsive-layout-and-design)
 - [Tools Used](#tools-used)
@@ -248,3 +250,13 @@ User accounts have been created using the Django allauth module. This allows inf
 The staff management page displays the bookings for the current day, and if there are no bookings, it will display "There are no reservations for today". There is a sub navigation at the top right of the content area, containing links to the Manage Bookings and Manage Menus pages.
 
 ![Screenshot of staff dashboard](documentation/screenshots/staff.png)
+
+#### Manage Bookings
+The logged in staff members can manage the bookings from this page. There is a filter at the top of the page which can filter by either name, date or both. As per the user profile, staff can also edit and delete bookings from here.
+
+![Screenshot of manage bookings](documentation/screenshots/manage-bookings.png)
+
+#### Manage Menus
+Logged in staff members can add a menu item here by completing the form at the top of the page by adding a type, title, descriont (optional) and a price. Once added an alert will pop up to inform them that the item has been added and it will appear beneath the form, and also on the menu page. All menu items are grouped by their type beneath the form, each with an edit and delete link.  When editing a menu item, the form will be prepopulated with the menu item details which the user can amend and save. When the delete button is clicked on, the user is taken to a delete confirmation page.
+
+![Screenshot of manage menus](documentation/screenshots/manage-menus.png)

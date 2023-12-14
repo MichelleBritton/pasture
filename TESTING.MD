@@ -37,8 +37,8 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The home page is a simple, clean design that immediately encourages a user to view the menu or book a table<br>- The user only has to scroll down a little to view more information about the restaurant and to see all of the relavant information<br>- The colours are warm and welcoming which enhance the feeling of a family run restaurant<br>- The logo contains a picture of a cow which suggests the nature of the restaurant<br>- Alerts are provided as feedback to user actions|     
 |**Outcome**             |All features tested and passed.| 
 |**User Story:**         |**As a user, I can create an account so that I can make a reservation**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A user should be able to register for an account by filling in a form|
+|**Summary**             |- The user can navigate to the Register page which displays a form for the user to fill out<br>- The user can enter a username, email and password<br>- Once the form has been completed and submitted an entry is created in the database<br>- A popup alert message appears to confirm that the user is signed in|     
 |**Outcome**             |All features tested and passed.| 
 |**User Story:**         |**As a user, I can login to my account using my email and password so that my account is secure**|
 |**Acceptance Criteria:**||

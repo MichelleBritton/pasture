@@ -260,3 +260,9 @@ The logged in staff members can manage the bookings from this page. There is a f
 Logged in staff members can add a menu item here by completing the form at the top of the page by adding a type, title, descriont (optional) and a price. Once added an alert will pop up to inform them that the item has been added and it will appear beneath the form, and also on the menu page. All menu items are grouped by their type beneath the form, each with an edit and delete link.  When editing a menu item, the form will be prepopulated with the menu item details which the user can amend and save. When the delete button is clicked on, the user is taken to a delete confirmation page.
 
 ![Screenshot of manage menus](documentation/screenshots/manage-menus.png)
+
+### Potential Future Features
+- Enhance the booking system so that the app can check multiple tables for availability 
+- Add functionality for users to be able to leave reviews of the restaurant
+- Add the ability for users to pre-order their food
+- Enable users to "like" items on the menu

@@ -40,9 +40,9 @@ Back to [README.MD](README.MD)
 |**Acceptance Criteria:**|A user should be able to register for an account by filling in a form|
 |**Summary**             |- The user can navigate to the Register page which displays a form for the user to fill out<br>- The user can enter a username, email and password<br>- Once the form has been completed and submitted an entry is created in the database<br>- A popup alert message appears to confirm that the user is signed in|     
 |**Outcome**             |All features tested and passed.| 
-|**User Story:**         |**As a user, I can login to my account using my email and password so that my account is secure**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**User Story:**         |**As a user, I can login to my account using my username and password so that my account is secure**|
+|**Acceptance Criteria:**|A user should be able to login by entering their username and password|
+|**Summary**             |- The user can login by navigating to the Login page where a form is displayed allowing the user to login with their username and password<br>- A popup alert message appears to confirm that the user is signed in|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I can log out of my account at any time so that my account is secure**|
 |**Acceptance Criteria:**||

@@ -67,7 +67,7 @@ This project was created using the Five Planes of Website Design:
 |                            | 2F |As a user, I want a pleasant UX experience so that I am encouraged to make a booking|
 |**Authentication**          |    |           |
 |                            | 3A |As a user, I can create an account so that I can make a reservation|
-|                            | 3B |As a user, I can login to my account using my email and password so that my account is secure|
+|                            | 3B |As a user, I can login to my account using my username and password so that my account is secure|
 |                            | 3C |As a user, I can log out of my account at any time so that my account is secure|
 |                            | 3D |As a user, I can reset my password so that I can keep my account secure and if I have forgotten my password|
 |**Booking**                 |    |           |

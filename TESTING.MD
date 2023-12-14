@@ -49,8 +49,8 @@ Back to [README.MD](README.MD)
 |**Summary**             |- When a user is logged in, there is a Logout link in the navigation<br>- When the Logout link has been clicked it takes you to a logout confirmation page for the user to confirm that they wish to log out<br>- A popup alert message appears to confirm that the user has been signed out|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I can reset my password so that I can keep my account secure and if I have forgotten my password**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A user should be able to reset their password|
+|**Summary**             |-On the Login page there is a 'Forgot Password' link<br>- There is the facility within the allauth package for a reset password link to be emailed to the user but in order to set this up there needs to be an smtp server so as a workaround for this project password reset links are saved in a file|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to make a reservation for a specific date and time**|
 |**Acceptance Criteria:**||

@@ -266,3 +266,15 @@ Logged in staff members can add a menu item here by completing the form at the t
 - Add functionality for users to be able to leave reviews of the restaurant
 - Add the ability for users to pre-order their food
 - Enable users to "like" items on the menu
+
+## Responsive Layout and Design
+Bootstrap has been used to ensure that the project is responsive and able to be viewed on all types of devices. Bootstrap's pre-defined breakpoints have been utilised together with some custom breakpoints where needed.
+
+**Breakpoints**
+- min-width: 576px
+- min-width: 768px
+- min-width: 992px
+- min-width: 1200px
+- min-width: 1400px
+- min-width: 1800px
+- min-width: 2000px

@@ -313,3 +313,6 @@ Bootstrap has been used to ensure that the project is responsive and able to be 
 - django-filter
 - gunicorn
 - psycopg2
+
+## Testing
+The testing documentation can be found at [TESTING.MD](TESTING.MD)

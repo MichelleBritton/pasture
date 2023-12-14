@@ -29,4 +29,10 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The opening and closing times are positioned within the footer of each page|     
 |**Outcome**             |All features tested and passed.| 
 
+|User Story:             |As a user, I want to see the restaurant's location|
+|:--                     |:--                                                      |
+|**Acceptance Criteria:**|The user should be able to easily find the restaurant's location|
+|**Summary**             |- The address of the restaurant is positioned within the footer of each page|     
+|**Outcome**             |All features tested and passed.| 
+
 Back to [README.MD](README.MD)

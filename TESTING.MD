@@ -57,16 +57,16 @@ Back to [README.MD](README.MD)
 |**Summary**             |- If a user clicks on the Book page they will be prompted to either register or login<br>- Once logged in, the user will be able to complete a form, entering their name, phone number, date, time, number of guests and notes<br>- When the form has been completed a check will be made to see if the date/time combination already exists in the database<br>- If there is an existing reservation in the database for that date/time combination an error message will pop up informing the user that slot is not available<br>- If there is no existing reservation in the database a success message will pop up and the user redirected to their Profile page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to make a reservation for x number of people**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in user should be able to make a reservation for as many people as they need|
+|**Summary**             |Within the booking form there is a field for number of guests|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to add a note to my reservation detailing any specific requests or details regarding any allergies**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in user should be able to add a note for staff when making a reservation|
+|**Summary**             |Within teh booking form there is a field for users to add a note|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to view my reservation**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in user there should be a page where that user's reservations are displayed|
+|**Summary**             |- The Profile page is visible to logged in users but not available to staff members<br>- This page contains a list of all reservations made by the logged in user<br>- Each reservation contains all the details originally entered in the booking form|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to update my reservation**|
 |**Acceptance Criteria:**||

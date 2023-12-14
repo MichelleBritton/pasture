@@ -352,3 +352,17 @@ Navigate to the GitHub Repository you want to clone:
 - Open your IDE of choice (git must be installed for the next steps)
 - Type git clone copied-git-url into the terminal
 - The project will now have been cloned on your local machine for use.
+
+## Credits
+
+### Content
+- The content of the website is fictional but inspiration for menus was taken from various sites.
+
+### Media
+- All images were purchased from [iStock](https://www.istockphoto.com/)
+
+### Code
+- Guidance on how to reset password - https://learndjango.com/tutorials/django-password-reset-tutorial
+- Research to help further my knowledge and understanding on forms - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms
+- Research to help further my knowledge and understanding of function based views and how to delete items with a confirmation page - https://www.geeksforgeeks.org/delete-view-function-based-views-django/
+- Guidance on how to add a datepicker to a form field - https://stackoverflow.com/questions/49054846/how-can-i-use-date-picker-with-django-filter

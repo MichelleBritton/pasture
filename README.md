@@ -366,3 +366,7 @@ Navigate to the GitHub Repository you want to clone:
 - Research to help further my knowledge and understanding on forms - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms
 - Research to help further my knowledge and understanding of function based views and how to delete items with a confirmation page - https://www.geeksforgeeks.org/delete-view-function-based-views-django/
 - Guidance on how to add a datepicker to a form field - https://stackoverflow.com/questions/49054846/how-can-i-use-date-picker-with-django-filter
+
+## Acknowledgements
+
+I would like to acknowledge the tutors from Code Institute's Tutor Support for helping me solve some of the issues I faced together with my two mentors Daisy and Martina.

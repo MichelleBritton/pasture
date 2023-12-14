@@ -11,8 +11,8 @@ Back to [README.MD](README.MD)
 - [Bugs](#bugs)
 
 ## Manual Testing
-|User Story:|As a user, I want the navigation to be clear and visible so that I can easily navigate through the website|
-|:------------------------|----------------------------------------------------------------------------------------------------------|
+|User Story:             |As a user, I want the navigation to be clear and visible so that I can easily navigate through the website|
+|:--                     |--                                                                                                        |
 |**Acceptance Criteria:**|The site navigation should be easily accessible and consistent on every page so the user can visit all pages|
 |**Summary**             |- When a user visits the site, the navigation is at the top of every page<br>- When a user scrolls down the navigation stays fixed at the top of the screen          
 

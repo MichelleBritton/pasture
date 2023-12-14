@@ -5,9 +5,9 @@ window.addEventListener('scroll', function () {
     let scrollPos = window.scrollY;
     let logo = document.getElementById("logo");
     if (scrollPos > 400) {        
-        logo.src = "https://res.cloudinary.com/dkxdppkpe/image/upload/v1701105881/logo-sml_osf1ph.webp";
+        logo.src = "https://res.cloudinary.com/dkxdppkpe/image/upload/v1702568243/logo-sml_osf1ph_zcoipv.webp";
     } else {
-        logo.src = "https://res.cloudinary.com/dkxdppkpe/image/upload/v1701084882/logo_sqdz3b.webp";
+        logo.src = "https://res.cloudinary.com/dkxdppkpe/image/upload/v1702568243/logo_sqdz3b_tv5b3l.webp";
     }
 });
 

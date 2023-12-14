@@ -162,7 +162,7 @@ a:hover:not(.active):after {
 /* Hero Image on Home Page
 ------------------------------------------------------------------*/
 .hero-img {
-    background: url('https://res.cloudinary.com/dkxdppkpe/image/upload/v1701095799/main-img_xedqsc.webp') no-repeat;
+    background: url('https://res.cloudinary.com/dkxdppkpe/image/upload/v1702568244/main-img_xedqsc_lcqexe.webp') no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -186,7 +186,7 @@ a:hover:not(.active):after {
 /* Generic Hero Image 
 ------------------------------------------------------------------*/
 .generic-img {
-    background-image: url('https://res.cloudinary.com/dkxdppkpe/image/upload/v1701177529/steak_qr3aha.webp');
+    background-image: url('https://res.cloudinary.com/dkxdppkpe/image/upload/v1702568244/steak_qr3aha_nnqfcu.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

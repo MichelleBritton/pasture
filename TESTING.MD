@@ -50,11 +50,11 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I can reset my password so that I can keep my account secure and if I have forgotten my password**|
 |**Acceptance Criteria:**|A user should be able to reset their password|
-|**Summary**             |-On the Login page there is a 'Forgot Password' link<br>- There is the facility within the allauth package for a reset password link to be emailed to the user but in order to set this up there needs to be an smtp server so as a workaround for this project password reset links are saved in a file|     
+|**Summary**             |- On the Login page there is a 'Forgot Password' link<br>- There is the facility within the allauth package for a reset password link to be emailed to the user but in order to set this up there needs to be an smtp server so as a workaround for this project password reset links are saved in a file|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to make a reservation for a specific date and time**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in user should be able to complete a form to make a reservation|
+|**Summary**             |- If a user clicks on the Book page they will be prompted to either register or login<br>- Once logged in, the user will be able to complete a form, entering their name, phone number, date, time, number of guests and notes<br>- When the form has been completed a check will be made to see if the date/time combination already exists in the database<br>- If there is an existing reservation in the database for that date/time combination an error message will pop up informing the user that slot is not available<br>- If there is no existing reservation in the database a success message will pop up and the user redirected to their Profile page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to make a reservation for x number of people**|
 |**Acceptance Criteria:**||

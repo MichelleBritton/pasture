@@ -278,3 +278,38 @@ Bootstrap has been used to ensure that the project is responsive and able to be 
 - min-width: 1400px
 - min-width: 1800px
 - min-width: 2000px
+
+## Tools Used
+- [Figma](https://www.figma.com/) - for creating wireframes
+- [LucidChart](https://www.lucidchart.com/) - for creating the flowchart and database schema
+- [Git](https://git-scm.com/) - a version control system for tracking changes
+- [GitHub](https://github.com/) - a code hosting platform for version control
+- [Gitpod](https://www.gitpod.io/) - a cloud development environment
+- [Heroku](https://www.heroku.com) - for deployment of the project
+- [Bootstrap5](https://getbootstrap.com/) - a CSS Framework for developing responsive and mobile first websites
+- [Google Fonts](https://fonts.google.com/) - catalogue of open source fonts
+- [TinyPNG](https://tinypng.com/) - to compress images
+- [Favicon.io](https://favicon.io/) - to generate the favicon
+- [Font Awesome](https://fontawesome.com/) - to add icons in the navbar toggler
+- [Cloudinary](https://cloudinary.com/) - for storing static images
+- [Am I Responsive?](https://ui.dev/amiresponsive) - to generate a screenshot of the website on multiple devices
+- [Shields](https://shields.io/) - to generate badges for inclusion in the README field
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - for testing and debugging the website
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) - for accessibility and performance reporting
+- [WAVE](https://wave.webaim.org/) - for further accessibility testing
+- [The W3C Markup Validation Service](https://validator.w3.org/) - for validating HTML 
+- [Jigsaw](https://jigsaw.w3.org/css-validator/) - for validating CSS
+- [JSHint](https://jshint.com/) - for validating JavaScript
+- [PEP8 Validator](https://pep8ci.herokuapp.com/) - for validating the python code
+- [Browserstack](https://www.browserstack.com/) - for cross browser testing
+
+### Python Packages
+- crispy-bootstrap5
+- dj-database-url
+- Django
+- django-active-link
+- django-allauth
+- django-crispy-forms
+- django-filter
+- gunicorn
+- psycopg2

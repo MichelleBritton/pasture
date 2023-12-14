@@ -23,4 +23,10 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The contact details are positioned within the footer of each page|     
 |**Outcome**             |All features tested and passed.|  
 
+|User Story:             |As a user, I want to see the restaurant’s opening and closing times|
+|:--                     |:--                                                      |
+|**Acceptance Criteria:**|The user should be able to easily find the opening and closing times|
+|**Summary**             |- The opening and closing times are positioned within the footer of each page|     
+|**Outcome**             |All features tested and passed.| 
+
 Back to [README.MD](README.MD)

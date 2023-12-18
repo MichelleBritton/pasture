@@ -130,7 +130,16 @@ def delete_booking(request, booking_id):
 def staff_profile(request):
     """
     Render Staff Profile page to display all bookings
-    """   
+    """  
+    # Check if the user is a staff member
+    # and redirect them to the home page if not
+    if not request.user.is_staff:
+        messages.error(
+            request,
+            'Error, you are not authorised to view this page'
+        )
+        return redirect('home') 
+         
     # Filter bookings for today's date
     today = datetime.today()
     bookings = Booking.objects.filter(date=today)
@@ -145,7 +154,16 @@ def manage_bookings(request):
     """
     Render Manage Bookings page to display all bookings
     and ability to edit and delete them
-    """   
+    """  
+    # Check if the user is a staff member
+    # and redirect them to the home page if not
+    if not request.user.is_staff:
+        messages.error(
+            request,
+            'Error, you are not authorised to view this page'
+        )
+        return redirect('home') 
+
     all_bookings = Booking.objects.order_by('date')
     booking_filter = BookingFilter(request.GET, queryset=all_bookings)
     all_bookings = booking_filter.qs
@@ -182,6 +200,15 @@ def manage_menus(request):
     """
     Render Manage Menus Page and display form
     """
+    # Check if the user is a staff member
+    # and redirect them to the home page if not
+    if not request.user.is_staff:
+        messages.error(
+            request,
+            'Error, you are not authorised to view this page'
+        )
+        return redirect('home')  
+
     if request.method == 'POST':
         menu_form = MenuForm(data=request.POST)        
 
@@ -220,6 +247,15 @@ def edit_menu(request, menu_id):
     """
     # Get a copy of the menu item from the database
     menu_item = get_object_or_404(Menu, id=menu_id)
+
+    # Check if the user is a staff member
+    # and redirect them to the home page if not
+    if not request.user.is_staff:
+        messages.error(
+            request,
+            'Error, you are not authorised to view this page'
+        )
+        return redirect('home')  
     
     if request.method == 'POST':
         form = MenuForm(request.POST, instance=menu_item)
@@ -249,6 +285,15 @@ def delete_menu(request, menu_id):
     """
     # Get a copy of the menu item from the database
     menu_item = get_object_or_404(Menu, id=menu_id)
+
+    # Check if the user is a staff member
+    # and redirect them to the home page if not
+    if not request.user.is_staff:
+        messages.error(
+            request,
+            'Error, you are not authorised to view this page'
+        )
+        return redirect('home')  
 
     # If the user clicks on yes then delete the menu item
     # Otherwise, return to Manage Menus page

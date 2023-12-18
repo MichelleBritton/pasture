@@ -23,7 +23,3 @@ setTimeout(function() {
     }
 }, 3000);
 
-/**
- * Initiate date picker for filter
- */
-$('#datepicker').datepicker();

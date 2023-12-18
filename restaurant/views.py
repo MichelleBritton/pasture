@@ -63,12 +63,29 @@ def edit_booking(request, booking_id):
     """
     # Get a copy of the reservation from the database
     booking = get_object_or_404(Booking, id=booking_id)
+
+    # Check if the user is authorised to view this page
+    # and redirect them to the home page if not
+    if not booking.username == request.user:
+        messages.error(
+            request,
+            'Error, you are not authorised to view this page'
+        )
+        return redirect('home')  
+
+    # Create an instance of the booking form and return it to the template in the context 
+    # to pre-populate the form with current reservation details
+    form = BookTableForm(instance=booking)
+    context = {
+        'form': form
+    }
+
+    # Handle the form submission
     if request.method == 'POST':
         form = BookTableForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            messages.success(request,
-                'Thank you, the reservation has been changed')
+            messages.success(request, 'Thank you, the reservation has been changed')
             if request.user.is_staff:
                 return redirect('manage_bookings')
             else:
@@ -77,13 +94,6 @@ def edit_booking(request, booking_id):
             for error in form.errors:
                 messages.error(request, form.errors[error])    
             form = BookTableForm()
-
-    # Create an instance of the booking form and return it to the template in the context 
-    # to pre-populate the form with current reservation details
-    form = BookTableForm(instance=booking)
-    context = {
-        'form' : form
-    }
 
     return render(request, "edit_booking.html", context)
 

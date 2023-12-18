@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from .models import Booking
 from .models import Menu
 from .forms import BookTableForm
@@ -9,13 +10,15 @@ from datetime import datetime
 from .filters import BookingFilter
 
 
+
 def home(request):
     """
     Render Home page
     """
     return render(request, 'index.html')
-    
-    
+
+
+@login_required
 def book(request):
     """
     Render Book page and display booking form
@@ -44,7 +47,7 @@ def book(request):
         },
     )
 
-
+@login_required
 def my_profile(request):
     """
     Render My Profile page to display user bookings
@@ -57,6 +60,7 @@ def my_profile(request):
     return render(request, 'my_profile.html', context)
 
 
+@login_required
 def edit_booking(request, booking_id):
     """ 
     Render Edit Booking page
@@ -98,6 +102,7 @@ def edit_booking(request, booking_id):
     return render(request, "edit_booking.html", context)
 
 
+@login_required
 def delete_booking(request, booking_id):
     """ 
     Render Delete Booking page and delete booking on confirmation
@@ -127,6 +132,7 @@ def delete_booking(request, booking_id):
     return render(request, "delete_booking.html")
 
 
+@login_required
 def staff_profile(request):
     """
     Render Staff Profile page to display all bookings
@@ -139,7 +145,7 @@ def staff_profile(request):
             'Error, you are not authorised to view this page'
         )
         return redirect('home') 
-         
+
     # Filter bookings for today's date
     today = datetime.today()
     bookings = Booking.objects.filter(date=today)
@@ -150,6 +156,7 @@ def staff_profile(request):
     return render(request, 'staff_profile.html', context)
 
 
+@login_required
 def manage_bookings(request):
     """
     Render Manage Bookings page to display all bookings
@@ -196,6 +203,7 @@ def menu(request):
     return render(request, 'menu.html', context)
 
 
+@login_required
 def manage_menus(request):
     """
     Render Manage Menus Page and display form
@@ -241,6 +249,7 @@ def manage_menus(request):
     return render(request, 'manage_menus.html', context,)
 
 
+@login_required
 def edit_menu(request, menu_id):
     """ 
     Render Edit Menu page
@@ -279,6 +288,7 @@ def edit_menu(request, menu_id):
     return render(request, "edit_menu.html", context)
 
 
+@login_required
 def delete_menu(request, menu_id):
     """ 
     Render Delete Menu page and delete menu item on confirmation

@@ -66,7 +66,7 @@ def edit_booking(request, booking_id):
 
     # Check if the user is authorised to view this page
     # and redirect them to the home page if not
-    if not booking.username == request.user:
+    if not (booking.username == request.user or request.user.is_staff):
         messages.error(
             request,
             'Error, you are not authorised to view this page'
@@ -104,6 +104,15 @@ def delete_booking(request, booking_id):
     """
     # Get a copy of the reservation from the database
     booking = get_object_or_404(Booking, id=booking_id)
+
+    # Check if the user is authorised to view this page
+    # and redirect them to the home page if not
+    if not (booking.username == request.user or request.user.is_staff):
+        messages.error(
+            request,
+            'Error, you are not authorised to view this page'
+        )
+        return redirect('home')  
 
     # If the user clicks on yes then delete the booking
     # Otherwise, return to My Profile
@@ -152,7 +161,6 @@ def menu(request):
     """
     Render Menu Page and retrieve Menu items from database
     """
-
     starters = Menu.objects.filter(type=1).values()
     mains = Menu.objects.filter(type=2).values()
     desserts = Menu.objects.filter(type=3).values()
@@ -172,9 +180,8 @@ def menu(request):
 
 def manage_menus(request):
     """
-    Render Manage Menus Page and display  form
+    Render Manage Menus Page and display form
     """
-
     if request.method == 'POST':
         menu_form = MenuForm(data=request.POST)        
 
@@ -213,6 +220,7 @@ def edit_menu(request, menu_id):
     """
     # Get a copy of the menu item from the database
     menu_item = get_object_or_404(Menu, id=menu_id)
+    
     if request.method == 'POST':
         form = MenuForm(request.POST, instance=menu_item)
         if form.is_valid():

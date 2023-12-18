@@ -18,7 +18,9 @@ window.addEventListener('scroll', function () {
 setTimeout(function() {
     let messages = document.getElementById("msg");
     let alert = new bootstrap.Alert(messages);
-    alert.close();
+    if (messages) {
+        alert.close();
+    }
 }, 3000);
 
 /**

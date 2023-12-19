@@ -134,6 +134,7 @@ a:hover:not(.active):after {
 .navbar-toggler {
     border: 0;
     font-size: 2rem;
+    padding: 0 !important;
 }
 .navbar-toggler:focus {
     box-shadow: none;
@@ -166,6 +167,7 @@ a:hover:not(.active):after {
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
 }
 .welcome-panel {
     background: rgba(145,80,80, 0.3);

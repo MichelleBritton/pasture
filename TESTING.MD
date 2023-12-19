@@ -62,10 +62,10 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to add a note to my reservation detailing any specific requests or details regarding any allergies**|
 |**Acceptance Criteria:**|A logged in user should be able to add a note for staff when making a reservation|
-|**Summary**             |Within teh booking form there is a field for users to add a note|     
+|**Summary**             |Within the booking form there is a field for users to add a note|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to view my reservation**|
-|**Acceptance Criteria:**|A logged in user there should be a page where that user's reservations are displayed|
+|**Acceptance Criteria:**|There should be a page where a the user's reservations are displayed which is only visible to a logged in user|
 |**Summary**             |- The Profile page is visible to logged in users but not available to staff members<br>- This page contains a list of all reservations made by the logged in user<br>- Each reservation contains all the details originally entered in the booking form|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to update my reservation**|

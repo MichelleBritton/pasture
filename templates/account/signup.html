@@ -9,7 +9,7 @@
             <h1>Register</h1>            
         </div>
     </section>
-    <section class="text-area">
+    <div class="text-area">
         <p>
             {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
         </p>
@@ -32,5 +32,5 @@
             {% endslot %}
         {% endelement %}
         {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
-    </section>
+    </div>
 {% endblock content %}

@@ -110,8 +110,38 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 
 ## Browser Testing
+To ensure that the website and features work well across a multitude of browsers, the website was tested on the following browsers using Browserstack:
+
+- Chrome
+- Edge
+- Firefox
+- to be completed
+-
+-
+-
+-
 
 ## Validator Testing
+W3C HTML Validation
+
+No errors were returned when passing through the official W3C Validator.  The following pages have been tested:
+
+- Home
+- Menu
+- Book
+- Register
+- Login
+- Logout
+- My Profile
+- Edit Booking
+- Delete Booking
+- Staff Profile
+- Manage Bookings
+- Manage Menus
+- Edit Menu
+- Delete Menu
+
+![HTML Validation](documentation/validation/html.png)
 
 ## Accessibility Testing
 

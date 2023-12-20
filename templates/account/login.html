@@ -10,7 +10,7 @@
             <h1>Login</h1>            
         </div>
     </section>
-    <section class="text-area">
+    <div class="text-area">
         <p>
             {% blocktrans %}You must be logged in to make a reservation. If you have not yet created an account yet, then please
             <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
@@ -34,5 +34,5 @@
             {% endslot %}
         {% endelement %}
         {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
-    </section>    
+        </div>    
 {% endblock content %}

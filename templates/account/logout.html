@@ -9,7 +9,7 @@
             <h1>Logout</h1>            
         </div>
     </section>
-    <section class="text-area">    
+    <div class="text-area">    
         <p>{% trans 'Are you sure you want to sign out?' %}</p>
         {% url 'account_logout' as action_url %}
         {% element form method="post" action=action_url no_visible_fields=True %}
@@ -27,5 +27,5 @@
                 {% endelement %}
             {% endslot %}
         {% endelement %}
-    </section>
+    </div>
 {% endblock content %}

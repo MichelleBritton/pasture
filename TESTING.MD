@@ -85,8 +85,8 @@ Back to [README.MD](README.MD)
 |**Summary**             |- On the Manage Bookings page all reservations are shown by default<br>- There is a form at the top of the page with two fields - name and date<br>- The user can filter bookings by either name (does not need to be the full name) or date|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to update reservations on behalf of customers so that I can make the process as easy as possible for a customer**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in staff member needs to be provided with the functionality to update any reservation|
+|**Summary**             |- The Manage Bookings page contains a list of reservations made by all users, each reservation has a link to edit the reservation<br>- When the edit link is clicked on, the user is taken to the edit booking page which contains a form with all of the reservation details<br>- The user can change the details and click on the edit button to save the changes to the database<br>- An alert message appears to show whether this action has been successful or not|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to delete reservations on behalf of customers so that I can make the process as easy as possible for a customer**|
 |**Acceptance Criteria:**||

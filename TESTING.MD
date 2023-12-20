@@ -98,7 +98,7 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to add new menus**|
 |**Acceptance Criteria:**|A logged in staff member should be able to create new menu items|
-|**Summary**             |- When a staff member is logged in they have access to the sub navigation contained with the Staff Management section which contains a link to Manage Menus<br>- On the Manage Menus page there is a form which the staff member can complete and submit<br>- The available fields are Type (required), Title (required), Description (optional)<br>When the form has been submitted, an alert message will appear to inform the user whether it has been successful or not<br>- If successful, the menu item will then appear both on the Menu page and also beneath the form on the Manage Menus page|     
+|**Summary**             |- When a staff member is logged in they have access to the sub navigation contained with the Staff Management section which contains a link to Manage Menus<br>- On the Manage Menus page there is a form which the staff member can complete and submit<br>- The available fields are Type (required), Title (required), Description (optional) and Price (required)<br>- When the form has been submitted, an alert message will appear to inform the user whether it has been successful or not<br>- If successful, the menu item will then appear both on the Menu page and also beneath the form on the Manage Menus page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to edit menus**|
 |**Acceptance Criteria:**||

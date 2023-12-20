@@ -74,7 +74,7 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to delete my reservation**|
 |**Acceptance Criteria:**|A logged in user needs to be provided with the functionality to delete a reservation|
-|**Summary**             |- The Proile page contains a list of reservations made by the user, each reservation has a link to delete it<br>- When the delete link is clicked on, the user is taken to the delete booking page where they are asked to confirm the action or they can cancel and return to the Profile page<br>- Once deleted the user is redirected back to the Profile page|     
+|**Summary**             |- The Profile page contains a list of reservations made by the user, each reservation has a link to delete it<br>- When the delete link is clicked on, the user is taken to the delete booking page where they are asked to confirm the action or they can cancel and return to the Profile page<br>- Once deleted the user is redirected back to the Profile page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to see all reservations**|
 |**Acceptance Criteria:**|A logged in staff member should be able to view all reservations on one page|
@@ -89,8 +89,8 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The Manage Bookings page contains a list of reservations made by all users, each reservation has a link to edit the reservation<br>- When the edit link is clicked on, the user is taken to the edit booking page which contains a form with all of the reservation details<br>- The user can change the details and click on the edit button to save the changes to the database<br>- An alert message appears to show whether this action has been successful or not|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to delete reservations on behalf of customers so that I can make the process as easy as possible for a customer**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in staff member needs to be provided with the functionality to delete any reservation|
+|**Summary**             |- The Manage Bookings page contains a list of reservations made by all users, each reservation has a link to delete it<br>- When the delete link is clicked on, the user is taken to the delete booking page where they are asked to confirm the action or they can cancel and return to the Manage Bookings page<br>- Once deleted the user is redirected back to the Manage Bookings page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I want to see menus so I can decide whether I would like to make a reservation**|
 |**Acceptance Criteria:**||

@@ -74,11 +74,11 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to delete my reservation**|
 |**Acceptance Criteria:**|A logged in user needs to be provided with the functionality to delete a reservation|
-|**Summary**             |- The Proile page contains a list of reservations made by the user, each reservation has a link to delete it<br>- When the delete link is clicked on, the user is taken to the delete booking page where they are asked to confirm the action or they can cancel and return to the Profile page<br>- Once delete the user is redirected back to the Profile page|     
+|**Summary**             |- The Proile page contains a list of reservations made by the user, each reservation has a link to delete it<br>- When the delete link is clicked on, the user is taken to the delete booking page where they are asked to confirm the action or they can cancel and return to the Profile page<br>- Once deleted the user is redirected back to the Profile page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to see all reservations**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in staff member should be able to view all reservations on one page|
+|**Summary**             |- When a staff member is logged in they can view the Staff Management page which shows the reservations for the current day<br>- There is a sub navigation in the top right of the content area which contains a link to manage the bookings<br>- When that link is clicked on the user is taken to a page where all of the reservations are listed|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to filter the reservations by a specific date so that I can prepare for that day**|
 |**Acceptance Criteria:**||

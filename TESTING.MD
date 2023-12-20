@@ -109,4 +109,11 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The Manage Menus page contains a list of all menu items, each menu item has a link to delete it<br>- When the delete link is clicked on, the user is taken to the delete menu page where they are asked to confirm the action or they can cancel and return to the Manage Menus page<br>- Once deleted the user is redirected back to the Manage Menus page|     
 |**Outcome**             |All features tested and passed.|
 
+## Browser Testing
+
+## Validator Testing
+
+## Accessibility Testing
+
+## Bugs
 Back to [README.MD](README.MD)

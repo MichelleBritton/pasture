@@ -4,7 +4,7 @@ from django import forms
 
 
 class BookingFilter(django_filters.FilterSet):
-    """ 
+    """
     Filter bookings by name or date
     """
 
@@ -23,7 +23,6 @@ class BookingFilter(django_filters.FilterSet):
         )
     )
 
-    class Meta: 
+    class Meta:
         model = Booking
         fields = ['name', 'date']
-        

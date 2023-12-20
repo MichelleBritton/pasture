@@ -10,7 +10,6 @@ from datetime import datetime
 from .filters import BookingFilter
 
 
-
 def home(request):
     """
     Render Home page
@@ -24,7 +23,7 @@ def book(request):
     Render Book page and display booking form
     """
     if request.method == 'POST':
-        booking_form = BookTableForm(data=request.POST)        
+        booking_form = BookTableForm(data=request.POST)
 
         if booking_form.is_valid():
             instance = booking_form.save(commit=False)
@@ -32,11 +31,11 @@ def book(request):
             instance.email = request.user.email
             instance.save()
             messages.success(request,
-                'Thank you, your reservation has been made')
+                             'Thank you, your reservation has been made')
             return redirect('my_profile')
         else:
             for error in booking_form.errors:
-                messages.error(request, booking_form.errors[error])    
+                messages.error(request, booking_form.errors[error])
             booking_form = BookTableForm()
 
     return render(
@@ -47,22 +46,21 @@ def book(request):
         },
     )
 
+
 @login_required
 def my_profile(request):
     """
     Render My Profile page to display user bookings
-    """   
-    # Filter bookings made by the user 
+    """
+    # Filter bookings made by the user
     bookings = Booking.objects.filter(username=request.user)
-    context = {
-        'bookings' : bookings,
-    }
+    context = {'bookings': bookings}
     return render(request, 'my_profile.html', context)
 
 
 @login_required
 def edit_booking(request, booking_id):
-    """ 
+    """
     Render Edit Booking page
     """
     # Get a copy of the reservation from the database
@@ -75,10 +73,10 @@ def edit_booking(request, booking_id):
             request,
             'Error, you are not authorised to view this page'
         )
-        return redirect('home')  
+        return redirect('home')
 
-    # Create an instance of the booking form and return it to the template in the context 
-    # to pre-populate the form with current reservation details
+    # Create an instance of the booking form and return it to the template in
+    # the context to pre-populate the form with current reservation details
     form = BookTableForm(instance=booking)
     context = {
         'form': form
@@ -89,14 +87,15 @@ def edit_booking(request, booking_id):
         form = BookTableForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Thank you, the reservation has been changed')
+            messages.success(request, 'Thank you, the reservation has
+                             been changed')
             if request.user.is_staff:
                 return redirect('manage_bookings')
             else:
                 return redirect('my_profile')
         else:
             for error in form.errors:
-                messages.error(request, form.errors[error])    
+                messages.error(request, form.errors[error])
             form = BookTableForm()
 
     return render(request, "edit_booking.html", context)
@@ -104,7 +103,7 @@ def edit_booking(request, booking_id):
 
 @login_required
 def delete_booking(request, booking_id):
-    """ 
+    """
     Render Delete Booking page and delete booking on confirmation
     """
     # Get a copy of the reservation from the database
@@ -117,7 +116,7 @@ def delete_booking(request, booking_id):
             request,
             'Error, you are not authorised to view this page'
         )
-        return redirect('home')  
+        return redirect('home')
 
     # If the user clicks on yes then delete the booking
     # Otherwise, return to My Profile
@@ -136,7 +135,7 @@ def delete_booking(request, booking_id):
 def staff_profile(request):
     """
     Render Staff Profile page to display all bookings
-    """  
+    """
     # Check if the user is a staff member
     # and redirect them to the home page if not
     if not request.user.is_staff:
@@ -144,15 +143,13 @@ def staff_profile(request):
             request,
             'Error, you are not authorised to view this page'
         )
-        return redirect('home') 
+        return redirect('home')
 
     # Filter bookings for today's date
     today = datetime.today()
     bookings = Booking.objects.filter(date=today)
 
-    context = {
-        'bookings' : bookings,
-    }
+    context = {'bookings': bookings}
     return render(request, 'staff_profile.html', context)
 
 
@@ -161,7 +158,7 @@ def manage_bookings(request):
     """
     Render Manage Bookings page to display all bookings
     and ability to edit and delete them
-    """  
+    """
     # Check if the user is a staff member
     # and redirect them to the home page if not
     if not request.user.is_staff:
@@ -169,7 +166,7 @@ def manage_bookings(request):
             request,
             'Error, you are not authorised to view this page'
         )
-        return redirect('home') 
+        return redirect('home')
 
     all_bookings = Booking.objects.order_by('date')
     booking_filter = BookingFilter(request.GET, queryset=all_bookings)
@@ -215,20 +212,20 @@ def manage_menus(request):
             request,
             'Error, you are not authorised to view this page'
         )
-        return redirect('home')  
+        return redirect('home')
 
     if request.method == 'POST':
-        menu_form = MenuForm(data=request.POST)        
+        menu_form = MenuForm(data=request.POST)
 
         if menu_form.is_valid():
-            instance = menu_form.save(commit=False)            
+            instance = menu_form.save(commit=False)
             instance.save()
             messages.success(request,
-                'Menu item has been created')
+                             'Menu item has been created')
             return redirect('manage_menus')
         else:
             for error in menu_form.errors:
-                messages.error(request, menu_form.errors[error])           
+                messages.error(request, menu_form.errors[error])
             menu_form = MenuForm()
 
     starters = Menu.objects.filter(type=1).values()
@@ -251,7 +248,7 @@ def manage_menus(request):
 
 @login_required
 def edit_menu(request, menu_id):
-    """ 
+    """
     Render Edit Menu page
     """
     # Get a copy of the menu item from the database
@@ -264,33 +261,31 @@ def edit_menu(request, menu_id):
             request,
             'Error, you are not authorised to view this page'
         )
-        return redirect('home')  
-    
+        return redirect('home')
+
     if request.method == 'POST':
         form = MenuForm(request.POST, instance=menu_item)
         if form.is_valid():
             form.save()
             messages.success(request,
-                'This menu item has been changed')            
-            return redirect('manage_menus')            
+                             'This menu item has been changed')
+            return redirect('manage_menus')
         else:
             for error in form.errors:
-                messages.error(request, form.errors[error])    
+                messages.error(request, form.errors[error])
             form = MenuForm()
 
-    # Create an instance of the menu form and return it to the template in the context 
-    # to pre-populate the form with current menu item to edit
+    # Create an instance of the menu form and return it to the template in
+    # the context to pre-populate the form with current menu item to edit
     form = MenuForm(instance=menu_item)
-    context = {
-        'form' : form
-    }
+    context = {'form': form}
 
     return render(request, "edit_menu.html", context)
 
 
 @login_required
 def delete_menu(request, menu_id):
-    """ 
+    """
     Render Delete Menu page and delete menu item on confirmation
     """
     # Get a copy of the menu item from the database
@@ -303,16 +298,15 @@ def delete_menu(request, menu_id):
             request,
             'Error, you are not authorised to view this page'
         )
-        return redirect('home')  
+        return redirect('home')
 
     # If the user clicks on yes then delete the menu item
     # Otherwise, return to Manage Menus page
     if request.method == "POST":
         menu_item.delete()
         messages.success(request,
-                'This menu item has been deleted')  
+                         'This menu item has been deleted')
         return redirect('manage_menus')
 
     # If it is a GET request then render the delete confirmation page
     return render(request, "delete_menu.html")
-    

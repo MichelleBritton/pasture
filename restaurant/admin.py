@@ -1,12 +1,13 @@
 from django.contrib import admin
 from .models import Booking
-from.models import Menu
+from .models import Menu
 
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
 
-    list_display = ('username', 'name', 'phone_no', 'date', 'time', 'no_of_guests')
+    list_display = (
+        'username', 'name', 'phone_no', 'date', 'time', 'no_of_guests')
 
 
 @admin.register(Menu)

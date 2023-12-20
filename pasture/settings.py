@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['pasture-steakhouse-5a621bcf5a63.herokuapp.com', '8000-michellebritton-pasture-lk2yv0gxmf0.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['pasture-steakhouse-5a621bcf5a63.herokuapp.com', 'localhost', '8000-michellebritton-pasture-lk2yv0gxmf0.ws-eu107.gitpod.io']
 
 
 # Application definition

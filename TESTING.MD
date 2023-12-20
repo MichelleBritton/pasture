@@ -93,8 +93,8 @@ Back to [README.MD](README.MD)
 |**Summary**             |- The Manage Bookings page contains a list of reservations made by all users, each reservation has a link to delete it<br>- When the delete link is clicked on, the user is taken to the delete booking page where they are asked to confirm the action or they can cancel and return to the Manage Bookings page<br>- Once deleted the user is redirected back to the Manage Bookings page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I want to see menus so I can decide whether I would like to make a reservation**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|All users should be able to access a menu page and view menu items|
+|**Summary**             |- The Menu link is located in the main navigation and is accessible to all users<br>- All menu items are listed on the Menu page and are grouped by type ie. Starters, Mains etc<br>- Each menu item contains a title and price, with an optional description field|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to add new menus**|
 |**Acceptance Criteria:**||

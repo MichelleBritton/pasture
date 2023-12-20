@@ -81,8 +81,8 @@ Back to [README.MD](README.MD)
 |**Summary**             |- When a staff member is logged in they can view the Staff Management page which shows the reservations for the current day<br>- There is a sub navigation in the top right of the content area which contains a link to manage the bookings<br>- When that link is clicked on the user is taken to a page where all of the reservations are listed|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to filter the reservations by a specific date so that I can prepare for that day**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in staff member should be able to search for reservations by date|
+|**Summary**             |- On the Manage Bookings page all reservations are shown by default<br>- There is a form at the top of the page with two fields - name and date<br>- The user can filter bookings by either name (does not need to be the full name) or date|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to update reservations on behalf of customers so that I can make the process as easy as possible for a customer**|
 |**Acceptance Criteria:**||

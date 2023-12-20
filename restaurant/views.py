@@ -315,3 +315,4 @@ def delete_menu(request, menu_id):
 
     # If it is a GET request then render the delete confirmation page
     return render(request, "delete_menu.html")
+    

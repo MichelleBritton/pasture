@@ -94,11 +94,11 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a user, I want to see menus so I can decide whether I would like to make a reservation**|
 |**Acceptance Criteria:**|All users should be able to access a menu page and view menu items|
-|**Summary**             |- The Menu link is located in the main navigation and is accessible to all users<br>- All menu items are listed on the Menu page and are grouped by type ie. Starters, Mains etc<br>- Each menu item contains a title and price, with an optional description field|     
+|**Summary**             |- The Menu link is located in the main navigation and is accessible to all users<br>- All menu items are listed on the Menu page and are grouped by type ie. Starters, Mains etc<br>- Each menu item contains a title and price, with an optional description field<br>- The menu items are populated from entries in the database|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to add new menus**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in staff member should be able to create new menu items|
+|**Summary**             |- When a staff member is logged in they have access to the sub navigation contained with the Staff Management section which contains a link to Manage Menus<br>- On the Manage Menus page there is a form which the staff member can complete and submit<br>- The available fields are Type (required), Title (required), Description (optional)<br>When the form has been submitted, an alert message will appear to inform the user whether it has been successful or not<br>- If successful, the menu item will then appear both on the Menu page and also beneath the form on the Manage Menus page|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in staff member, I want to be able to edit menus**|
 |**Acceptance Criteria:**||

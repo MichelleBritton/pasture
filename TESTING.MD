@@ -65,12 +65,12 @@ Back to [README.MD](README.MD)
 |**Summary**             |Within the booking form there is a field for users to add a note|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to view my reservation**|
-|**Acceptance Criteria:**|There should be a page where a the user's reservations are displayed which is only visible to a logged in user|
+|**Acceptance Criteria:**|A logged in user should be able to view all of their reservations on one page|
 |**Summary**             |- The Profile page is visible to logged in users but not available to staff members<br>- This page contains a list of all reservations made by the logged in user<br>- Each reservation contains all the details originally entered in the booking form|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to update my reservation**|
-|**Acceptance Criteria:**||
-|**Summary**             ||     
+|**Acceptance Criteria:**|A logged in user needs to be provided with the functionality to click on a reservation and edit a pre-populated form with updated details|
+|**Summary**             |- The Profile page contains a list of reservations made by the user, each reservation has a link to edit the reservation<br>- When the edit link is clicked on, the user is taken to the edit booking page which contains a form with all of the reservation details<br>- The user can change the details and click on the edit button to save the changes to the database<br>- An alert message to show whether this action has been successful or not|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to delete my reservation**|
 |**Acceptance Criteria:**||

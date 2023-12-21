@@ -194,10 +194,9 @@ I used the logo colour as a base to create a colour palette using Adobe Colour.
 ![Colour Palette](documentation/images/color-palette.png)
 
 #### Fonts
-The following fonts were used for this project which were imported from Google Fonts (link)
+The following fonts were used for this project which were imported from Google Fonts. The main font used throughout the site is Open Sans, whilst Galada has been used for the logo and headings.
 
-Galada - used for the logo and headings
-Open Sans - used for the body text
+![Fonts](documentation/images/fonts.png)
 
 #### Visual Effects
 - Javascript was used to detect when the user had scrolled down the page and reduce teh size of the header, by replacing the logo image with a smaller text version, as the header takes up a lot of space.

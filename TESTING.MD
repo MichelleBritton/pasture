@@ -196,6 +196,10 @@ In order to test performance and accessibility, I used Lighthouse within the Chr
 
 ![Menu Lighthouse Report](documentation/accessibility/menu.png)
 
+#### Book
+
+![Book Lighthouse Report](documentation/accessibility/book.png)
+
 #### Register
 
 ![Register Lighthouse Report](documentation/accessibility/register.png)
@@ -203,6 +207,26 @@ In order to test performance and accessibility, I used Lighthouse within the Chr
 #### Login
 
 ![Login Lighthouse Report](documentation/accessibility/login.png)
+
+#### My Profile
+
+![My Profile Lighthouse Report](documentation/accessibility/my-profile.png)
+
+#### Edit Booking
+
+![Edit Booking Lighthouse Report](documentation/accessibility/edit-booking.png)
+
+#### Delete Booking
+
+![Delete Booking Lighthouse Report](documentation/accessibility/delete-booking.png)
+
+#### Staff Profile
+
+![Staff Profile Lighthouse Report](documentation/accessibility/staff-profile.png)
+
+#### Manage Bookings
+
+![Manage Bookings Lighthouse Report](documentation/accessibility/manage-bookings.png)
 
 ## Bugs
 Back to [README.MD](README.MD)

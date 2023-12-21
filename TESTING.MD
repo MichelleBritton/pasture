@@ -240,5 +240,60 @@ In order to test performance and accessibility, I used Lighthouse within the Chr
 
 ![Delete Menus Lighthouse Report](documentation/accessibility/delete-menus.png)
 
+### WAVE
+Further accessibility testing was undertaken with WAVE.
+
+#### Home
+
+![Home Wave Report](documentation/accessibility/w-home.png)
+
+#### Menu
+
+![Menu Wave Report](documentation/accessibility/w-menu.png)
+
+#### Book
+
+![Book Wave Report](documentation/accessibility/w-book.png)
+
+#### Register
+
+![Register Wave Report](documentation/accessibility/w-register.png)
+
+#### Login
+
+![Login Wave Report](documentation/accessibility/w-login.png)
+
+#### My Profile
+
+![My Profile Wave Report](documentation/accessibility/w-my-profile.png)
+
+#### Edit Booking
+
+![Edit Booking Wave Report](documentation/accessibility/w-edit-booking.png)
+
+#### Delete Booking
+
+![Delete Booking Wave Report](documentation/accessibility/w-delete-booking.png)
+
+#### Staff Profile
+
+![Staff Profile Wave Report](documentation/accessibility/w-staff-profile.png)
+
+#### Manage Bookings
+
+![Manage Bookings Wave Report](documentation/accessibility/w-manage-bookings.png)
+
+#### Manage Menus
+
+![Manage Menus Wave Report](documentation/accessibility/w-manage-menus.png)
+
+#### Edit Menus
+
+![Edit Menus Wave Report](documentation/accessibility/w-edit-menus.png)
+
+#### Delete Menus
+
+![Delete Menus Wave Report](documentation/accessibility/w-delete-menus.png)
+
 ## Bugs
 Back to [README.MD](README.MD)

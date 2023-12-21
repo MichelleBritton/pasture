@@ -87,8 +87,8 @@ def edit_booking(request, booking_id):
         form = BookTableForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Thank you, the reservation has
-                             been changed')
+            messages.success(request, 'Thank you, the reservation has'
+                             'been changed')
             if request.user.is_staff:
                 return redirect('manage_bookings')
             else:

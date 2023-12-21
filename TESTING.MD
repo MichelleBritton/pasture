@@ -228,5 +228,17 @@ In order to test performance and accessibility, I used Lighthouse within the Chr
 
 ![Manage Bookings Lighthouse Report](documentation/accessibility/manage-bookings.png)
 
+#### Manage Menus
+
+![Manage Menus Lighthouse Report](documentation/accessibility/manage-menus.png)
+
+#### Edit Menus
+
+![Edit Menus Lighthouse Report](documentation/accessibility/edit-menus.png)
+
+#### Delete Menus
+
+![Delete Menus Lighthouse Report](documentation/accessibility/delete-menus.png)
+
 ## Bugs
 Back to [README.MD](README.MD)

@@ -251,6 +251,7 @@ a:hover:not(.active):after {
 /* Filter
 ------------------------------------------------------------------*/
 .filter-form input {
+    min-height: 20px;
     margin-bottom: 5px;
     width: 250px;
 }

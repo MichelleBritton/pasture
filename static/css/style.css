@@ -254,6 +254,9 @@ a:hover:not(.active):after {
     margin-bottom: 5px;
     width: 250px;
 }
+label.filter-label {
+    width: 100px;
+}
 
 /* Footer
 ------------------------------------------------------------------*/

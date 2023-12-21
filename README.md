@@ -199,7 +199,7 @@ The following fonts were used for this project which were imported from Google F
 ![Fonts](documentation/images/fonts.png)
 
 #### Visual Effects
-- Javascript was used to detect when the user had scrolled down the page and reduce teh size of the header, by replacing the logo image with a smaller text version, as the header takes up a lot of space.
+- Javascript was used to detect when the user had scrolled down the page and reduce the size of the header, by replacing the logo image with a smaller text version, as the header takes up a lot of space.
 - The main image on the home page has been fixed for a parallax scrolling effect. 
 - All links have an animated hover state
 
@@ -256,7 +256,7 @@ The logged in staff members can manage the bookings from this page. There is a f
 ![Screenshot of manage bookings](documentation/screenshots/manage-bookings.png)
 
 #### Manage Menus
-Logged in staff members can add a menu item here by completing the form at the top of the page by adding a type, title, descriont (optional) and a price. Once added an alert will pop up to inform them that the item has been added and it will appear beneath the form, and also on the menu page. All menu items are grouped by their type beneath the form, each with an edit and delete link.  When editing a menu item, the form will be prepopulated with the menu item details which the user can amend and save. When the delete button is clicked on, the user is taken to a delete confirmation page.
+Logged in staff members can add a menu item here by completing the form at the top of the page by adding a type, title, description (optional) and a price. Once added an alert will pop up to inform them that the item has been added and it will appear beneath the form, and also on the menu page. All menu items are grouped by their type beneath the form, each with an edit and delete link.  When editing a menu item, the form will be prepopulated with the menu item details which the user can amend and save. When the delete button is clicked on, the user is taken to a delete confirmation page.
 
 ![Screenshot of manage menus](documentation/screenshots/manage-menus.png)
 

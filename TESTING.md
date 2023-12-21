@@ -58,11 +58,11 @@ Back to [README.MD](README.MD)
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to make a reservation for x number of people**|
 |**Acceptance Criteria:**|A logged in user should be able to make a reservation for as many people as they need|
-|**Summary**             |Within the booking form there is a field for number of guests|     
+|**Summary**             |- Within the booking form there is a field for number of guests|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to add a note to my reservation detailing any specific requests or details regarding any allergies**|
-|**Acceptance Criteria:**|A logged in user should be able to add a note for staff when making a reservation|
-|**Summary**             |Within the booking form there is a field for users to add a note|     
+|**Acceptance Criteria:**|- A logged in user should be able to add a note for staff when making a reservation|
+|**Summary**             |- Within the booking form there is a field for users to add a note|     
 |**Outcome**             |All features tested and passed.|
 |**User Story:**         |**As a logged in user, I want to be able to view my reservation**|
 |**Acceptance Criteria:**|A logged in user should be able to view all of their reservations on one page|

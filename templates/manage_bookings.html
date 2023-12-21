@@ -26,10 +26,14 @@
             <div class="d-flex border-bottom border-4 mb-5 pb-2">
                 <p class="pe-5">Filter bookings by Name or Date:</p>
                 <form method="GET" class="filter-form pb-5">
-                    <label for="id_name">Name</label>
-                    {{ booking_filter.form.name }}
-                    <label for="datepicker">Date</label>
-                    {{ booking_filter.form.date }}
+                    <div class="float-start px-3">
+                        <label for="id_name">Name</label>
+                        {{ booking_filter.form.name }}
+                    </div>
+                    <div class="float-start px-3">
+                        <label for="datepicker">Date</label>
+                        {{ booking_filter.form.date }}
+                    </div>
                     <button class="btn btn-lg" type="submit">Search</button>
                 </form>  
             </div>                         

@@ -184,6 +184,25 @@ I used the Code Institute PEP8 Python Linter to validate my Python code and ensu
 ![views.py Validation](documentation/validation/views.png)
 
 ## Accessibility Testing
+### Lighthouse
+
+In order to test performance and accessibility, I used Lighthouse within the Chrome Developer Tools.
+
+#### Home
+
+![Home Lighthouse Report](documentation/accessibility/home.png)
+
+#### Menu
+
+![Menu Lighthouse Report](documentation/accessibility/menu.png)
+
+#### Register
+
+![Register Lighthouse Report](documentation/accessibility/register.png)
+
+#### Login
+
+![Login Lighthouse Report](documentation/accessibility/login.png)
 
 ## Bugs
 Back to [README.MD](README.MD)

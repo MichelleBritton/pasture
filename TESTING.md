@@ -320,6 +320,6 @@ Further accessibility testing was undertaken with WAVE.
 
 ## Bugs
 
-No bugs.
+When making a reservation it was found that bookings could be made using a date from the past.  To fix this I add a clean function to the forms.py to test whether the date is in the past and if so throw an exception error.
 
 Back to [README.MD](README.MD)

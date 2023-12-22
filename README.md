@@ -195,15 +195,15 @@ Figma was used to create wireframes for both mobile and desktop.
 
 ![Login Wireframe](documentation/wireframes/login-wireframe.png)
 
-#### My Profile
+#### My Profile / Manage Bookings
 
 ![My Profile Wireframe](documentation/wireframes/my-profile-wireframe.png)
 
-#### Edit Booking
+#### Edit Booking / Edit Menu
 
 ![Edit Booking Wireframe](documentation/wireframes/edit-booking-wireframe.png)
 
-#### Delete Booking
+#### Delete Booking / Delete Menu
 
 ![Delete Booking Wireframe](documentation/wireframes/delete-booking-wireframe.png)
 
@@ -211,21 +211,9 @@ Figma was used to create wireframes for both mobile and desktop.
 
 ![Staff Profile Wireframe](documentation/wireframes/staff-profile-wireframe.png)
 
-#### Manage Bookings
-
-![Manage Bookings Wireframe](documentation/wireframes/manage-bookings-wireframe.png)
-
 #### Manage Menus
 
 ![Manage Menus Wireframe](documentation/wireframes/manage-menus-wireframe.png)
-
-#### Edit Menu
-
-![Edit Menu Wireframe](documentation/wireframes/edit-menu-wireframe.png)
-
-#### Delete Menu
-
-![Delete Menu Wireframe](documentation/wireframes/delete-menu-wireframe.png)
 
 
 #### Database

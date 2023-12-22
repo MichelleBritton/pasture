@@ -205,9 +205,9 @@ The following fonts were used for this project which were imported from Google F
 
 ### Agile Methodology
 
-This project was developed using the Agile methodology.
+This project was developed using the Agile methodology by delivering small features in incremental sprints.  All user stories were assigned to epics, which in turn were assigned to sprints. Each user story was prioritised by the labels "Must have", "Should have" and "Could have". This method ensures that all important core requirements were completed first, with features labelled "Could have" being added should there be capacity.
 
-All progress of epics and user story implementation was registered using GitHub. As the user stories were accomplished, they were moved in the GitHub Kanban board from **To Do**, to **In Progress**, **Done** and **Not Implemented** lists.
+All progress of epics and user story implementation was registered using GitHub and can be found [here](https://github.com/users/MichelleBritton/projects/4). As the user stories were accomplished, they were moved in the GitHub Kanban board from **To Do**, to **In Progress**, **Done** and **Not Implemented** lists.
 
 #### Sprint 1
 - Epic 1 - Initial Setup

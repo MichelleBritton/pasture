@@ -28,7 +28,7 @@ class BookTableForm(forms.ModelForm):
 
     def clean(self):
         """
-        Get form data and clean to ensure reservations cannot be 
+        Get form data and clean to ensure reservations cannot be
         made in the past
         """
         date = self.cleaned_data['date']

@@ -304,15 +304,15 @@ Bootstrap has been used to ensure that the project is responsive and able to be 
 - [Browserstack](https://www.browserstack.com/) - for cross browser testing
 
 ### Python Packages
-- crispy-bootstrap5
-- dj-database-url
-- Django
-- django-active-link
-- django-allauth
-- django-crispy-forms
-- django-filter
-- gunicorn
-- psycopg2
+- crispy-bootstrap5 - allows the use of Bootstrap5 with Crispy Forms
+- dj-database-url - used to parse database url for production environment
+- Django - framework used to build the application
+- django-active-link - used to show the active link on each page
+- django-allauth - authentication system for login, register, logout etc
+- django-crispy-forms - used to style the forms
+- django-filter - used to filter results
+- gunicorn - used for deployment
+- psycopg2 - used for database connections
 
 ## Testing
 The testing documentation can be found at [TESTING.md](TESTING.md)
